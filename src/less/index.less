@@ -1,5 +1,14 @@
 // out: "../../wwwroot/"
 
+.flexfunction()
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center
+}
+
 #main-header{
     height: 50px;
     border: 1px solid;
@@ -23,3 +32,40 @@
 .languages{
     display: inline-block;
 }
+
+#categories{
+    background-color: lightblue;
+    height: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#categories > a{
+    font-size: 25px;
+    margin: 30px;
+    color: white;
+}
+
+a:hover{
+    background-color: red;
+}
+
+// #notebooks{
+//     position: absolute;
+//     top: 30px;
+//     left: 300px;
+// }
+
+// // #phones{
+// //     position: absolute;
+// //     top: 30px;
+// //     left: 30px;
+// // }
+
+// // #tvs{
+// //     position: absolute;
+// //     top: 30px;
+// //     left: 400px;
+// // }

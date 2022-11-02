@@ -14,3 +14,18 @@
 .languages {
   display: inline-block;
 }
+#categories {
+  background-color: lightblue;
+  height: 40px;
+}
+a {
+  text-decoration: none;
+}
+#categories > a {
+  font-size: 25px;
+  margin: 30px;
+  color: white;
+}
+a:hover {
+  background-color: red;
+}

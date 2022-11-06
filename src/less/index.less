@@ -1,4 +1,6 @@
 // out: "../../wwwroot/"
+@BlackColor: black;
+@AbsolutePosition: absolute;
 
 .flexfunction()
 {
@@ -9,85 +11,87 @@
     align-content: center
 }
 
-// .main-header{
-//     height: 50px;
-//     border: 1px solid;
-// }   
+.main-header{
+    height: 100%;
+    margin: 0 30px;
+    position: @AbsolutePosition;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}   
 
 .logo{
     width: 100px;
     height: 30px;
+    padding: 10px;
 }
 
 .main-header > a > span{
-    color: black;
+    color: @BlackColor;
 }
 
 a{
     text-decoration: none;
 }
 
+.categories{
+    margin-left: 150px;
+}
 
+.categories > a {
+    padding: 20px;
+}
 
 #searching-button{
     height: 30px;
     width: 50px;
+    border: none;
+    background-color: transparent;
+    margin-left: -5px;
+}
+
+#searching-button:hover{
+    background-color: lightgray;
+    opacity: .33;
 }
 
 #search-box{
     width: 300px;
-    height: 30px;
+    height: 25px;
     font-size: 20px;
+    margin-left: 100px;
 }
 
-.languages{
+.languages, .categories{
     display: inline-block;
 }
 
-// #categories{
-//     background-color: lightblue;
-//     height: 40px;
-// }
+.languages{
+    margin-left: 50px;
+}
+
+::placeholder{
+    padding: 2px;
+}
+
+.UK, .Russia, .Azerbaijan{
+    width: 30px;
+    height: 30px;
+}
 
 
-// #categories > span{
-//     font-size: 20px;
-//     color: white;
-// }
+footer{
+    background-color: black;
+    position: @AbsolutePosition;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color:white;
+    height: 150px;
+}
 
-// #categories > a{
-//     font-size: 25px;
-//     margin: 30px;
-//     color: white;
-// }
-
-// a:hover{
-//     background-color: red;
-// }
-
-// .languages > input [type=button]{
-//     border: none;
-//     background-color: lightgray;
-// }
-
-// #enButton, #rusButton, #azButton{
-//     border: none;
-// }
-
-// #notebooks{
-//     position: absolute;
-//     top: 30px;
-//     left: 300px;
-// }
-
-// // #phones{
-// //     position: absolute;
-// //     top: 30px;
-// //     left: 30px;
-// // }
-
-// // #tvs{
-// //     position: absolute;
-// //     top: 30px;
-// //     left: 400px;
-// // }
+footer > *
+{
+    padding: 10px;
+}

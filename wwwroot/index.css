@@ -1,6 +1,16 @@
+.main-header {
+  height: 100%;
+  margin: 0 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
 .logo {
   width: 100px;
   height: 30px;
+  padding: 10px;
 }
 .main-header > a > span {
   color: black;
@@ -8,15 +18,54 @@
 a {
   text-decoration: none;
 }
+.categories {
+  margin-left: 150px;
+}
+.categories > a {
+  padding: 20px;
+}
 #searching-button {
   height: 30px;
   width: 50px;
+  border: none;
+  background-color: transparent;
+  margin-left: -5px;
+}
+#searching-button:hover {
+  background-color: lightgray;
+  opacity: 0.33;
 }
 #search-box {
   width: 300px;
-  height: 30px;
+  height: 25px;
   font-size: 20px;
+  margin-left: 100px;
+}
+.languages,
+.categories {
+  display: inline-block;
 }
 .languages {
-  display: inline-block;
+  margin-left: 50px;
+}
+::placeholder {
+  padding: 2px;
+}
+.UK,
+.Russia,
+.Azerbaijan {
+  width: 30px;
+  height: 30px;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  height: 150px;
+}
+footer > * {
+  padding: 10px;
 }

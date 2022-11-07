@@ -23,6 +23,7 @@ a {
 }
 .categories > a {
   padding: 20px;
+  cursor: pointer;
 }
 #searching-button {
   height: 30px;
@@ -30,6 +31,7 @@ a {
   border: none;
   background-color: transparent;
   margin-left: -5px;
+  cursor: pointer;
 }
 #searching-button:hover {
   background-color: lightgray;
@@ -56,16 +58,70 @@ a {
 .Azerbaijan {
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
-footer {
-  background-color: black;
+.languages > img:hover {
+  opacity: 0.5;
+}
+.Honor70AD {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: white;
-  height: 150px;
+  top: 80px;
+  left: 600px;
 }
-footer > * {
-  padding: 10px;
+.HonorMagicr4ProAD {
+  position: relative;
+}
+.desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.Honor70btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.buy_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #256fff;
+  border-radius: 20px;
+  background-color: #256fff;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+}
+.buy_button:hover {
+  opacity: 0.5;
+}
+.learn_more_button {
+  font-size: 18px;
+  cursor: pointer;
+  padding-left: 15px;
+}
+.HONOR70Photo {
+  position: relative;
+  top: 300px;
+  left: 125px;
+  max-width: 80%;
+  height: 600px;
+}
+.honorMagicr4ProPhoto {
+  position: relative;
+  top: 100px;
+  left: 125px;
+  max-width: 80%;
+  height: 600px;
 }

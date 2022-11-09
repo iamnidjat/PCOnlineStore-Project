@@ -3,6 +3,10 @@
 @AbsolutePosition: absolute;
 @RelativePosition: relative;
 
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .flexfunction()
 {
     display: flex;
@@ -10,4 +14,152 @@
     justify-content: center;
     align-items: center;
     align-content: center
+}
+
+.main-header{
+    height: 100%;
+    margin: 0 30px;
+    position: @AbsolutePosition;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}   
+
+.logo{
+    width: 100px;
+    height: 30px;
+    padding: 10px;
+}
+
+.main-header > a > span{
+    color: @BlackColor;
+}
+
+a:active{
+    color: @BlackColor;
+}
+
+a{
+    text-decoration: none;
+}
+
+.categories{
+    margin-left: 150px;
+}
+
+.categories > a {
+    padding: 20px;
+    cursor: pointer;
+}
+
+#searching-button{
+    height: 30px;
+    width: 50px;
+    border: none;
+    background-color: transparent;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+#searching-button:hover{
+    background-color: lightgray;
+    opacity: .33;
+}
+
+#search-box{
+    width: 300px;
+    height: 25px;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.languages, .categories{
+    display: inline-block;
+}
+
+.languages{
+    margin-left: 50px;
+}
+
+::placeholder{
+    padding: 2px;
+}
+
+.UK, .Russia, .Azerbaijan{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.languages > img:hover{
+    opacity: .5;
+}
+
+.main-video
+{
+    position: @AbsolutePosition;
+    left: 0;
+    top: 100px;
+    width: 100vw;
+    height: 300px;
+}
+
+.about-honor{
+    font-size: 2vw;
+    position: @RelativePosition;
+    padding-bottom: 2vw;
+    top: 450px;
+    left: 650px;
+}
+
+.about-honor::after
+{
+    content: '';
+    width: 3vw;
+    height: 1px;
+    background-color: #000;
+    position: @AbsolutePosition;
+    bottom: 0;
+    left: 75px;
+}
+
+.about-text{
+    font-size: 20px;
+    color: @BlackColor;
+    text-align: center;
+    margin: 0 auto;
+    position: @AbsolutePosition;
+    bottom: 0;
+    left: 350px;
+}
+
+.about-title{
+    font-size: 2vw;
+    position: @RelativePosition;
+    padding-bottom: 2vw;
+    top: 680px;
+    left: 550px;
+}
+
+.about-title::after
+{
+    content: '';
+    width: 3vw;
+    height: 1px;
+    background-color: #000;
+    position: @AbsolutePosition;
+    bottom: 0;
+    left: 175px;
+}
+
+.about-text2{
+    font-size: 20px;
+    color: @BlackColor;
+    text-align: center;
+    margin: 0 auto;
+    position: @AbsolutePosition;
+    bottom: 0;
+    left: 350px;
+    top: 900px;
 }

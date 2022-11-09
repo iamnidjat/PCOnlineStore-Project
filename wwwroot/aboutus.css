@@ -1,0 +1,129 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main-header {
+  height: 100%;
+  margin: 0 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.logo {
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+}
+.main-header > a > span {
+  color: black;
+}
+a:active {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.categories {
+  margin-left: 150px;
+}
+.categories > a {
+  padding: 20px;
+  cursor: pointer;
+}
+#searching-button {
+  height: 30px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  margin-left: -5px;
+  cursor: pointer;
+}
+#searching-button:hover {
+  background-color: lightgray;
+  opacity: 0.33;
+}
+#search-box {
+  width: 300px;
+  height: 25px;
+  font-size: 20px;
+  margin-left: 100px;
+}
+.languages,
+.categories {
+  display: inline-block;
+}
+.languages {
+  margin-left: 50px;
+}
+::placeholder {
+  padding: 2px;
+}
+.UK,
+.Russia,
+.Azerbaijan {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.languages > img:hover {
+  opacity: 0.5;
+}
+.main-video {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100vw;
+  height: 300px;
+}
+.about-honor {
+  font-size: 2vw;
+  position: relative;
+  padding-bottom: 2vw;
+  top: 450px;
+  left: 650px;
+}
+.about-honor::after {
+  content: '';
+  width: 3vw;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+}
+.about-text {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+}
+.about-title {
+  font-size: 2vw;
+  position: relative;
+  padding-bottom: 2vw;
+  top: 680px;
+  left: 550px;
+}
+.about-title::after {
+  content: '';
+  width: 3vw;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 175px;
+}
+.about-text2 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  top: 900px;
+}

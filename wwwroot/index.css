@@ -1,3 +1,6 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 .main-header {
   height: 100%;
   margin: 0 30px;
@@ -13,6 +16,9 @@
   padding: 10px;
 }
 .main-header > a > span {
+  color: black;
+}
+a:active {
   color: black;
 }
 a {
@@ -63,13 +69,19 @@ a {
 .languages > img:hover {
   opacity: 0.5;
 }
+.honorimg {
+  width: 300px;
+  height: 50px;
+}
 .Honor70AD {
   position: absolute;
   top: 80px;
   left: 600px;
 }
-.HonorMagicr4ProAD {
+.HonorMagic4ProAD {
   position: relative;
+  top: 350px;
+  left: 600px;
 }
 .desc {
   display: flex;
@@ -86,6 +98,16 @@ a {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+.honorMagic4Probtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 150px;
+  left: 600px;
 }
 .buy_button {
   display: flex;
@@ -114,14 +136,14 @@ a {
 .HONOR70Photo {
   position: relative;
   top: 300px;
-  left: 125px;
+  left: 250px;
   max-width: 80%;
-  height: 600px;
+  height: 450px;
 }
-.honorMagicr4ProPhoto {
+.honorMagic4ProPhoto {
   position: relative;
-  top: 100px;
-  left: 125px;
+  top: 300px;
+  left: 250px;
   max-width: 80%;
-  height: 600px;
+  height: 450px;
 }

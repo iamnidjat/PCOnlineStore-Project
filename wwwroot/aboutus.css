@@ -2,7 +2,6 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .main-header {
-  height: 100%;
   margin: 0 30px;
   position: absolute;
   left: 0;
@@ -54,7 +53,7 @@ a {
   display: inline-block;
 }
 .languages {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 ::placeholder {
   padding: 2px;
@@ -126,4 +125,41 @@ a {
   bottom: 0;
   left: 350px;
   top: 900px;
+}
+.create-flex.multiple-row {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  top: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.flex-sections {
+  margin: 30px;
+  padding-right: 30px;
+}
+.create-flex.multiple-row2 {
+  position: absolute;
+  bottom: 0;
+  left: 350px;
+  top: 1230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.remarks {
+  font-size: 0.78125vw;
+  padding-top: 3vw;
+  color: gray;
+  max-width: 80%;
+  margin: 0 auto;
+  word-break: break-word;
+  position: absolute;
+  left: 350px;
+  top: 1300px;
 }

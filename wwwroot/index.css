@@ -54,7 +54,7 @@ a {
   display: inline-block;
 }
 .languages {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 ::placeholder {
   padding: 2px;
@@ -107,7 +107,7 @@ a {
   align-content: center;
   position: absolute;
   top: 150px;
-  left: 600px;
+  left: 70px;
 }
 .buy_button {
   display: flex;
@@ -137,12 +137,11 @@ a {
   position: relative;
   top: 300px;
   left: 250px;
-  max-width: 80%;
   height: 450px;
 }
 .honorMagic4ProPhoto {
   position: relative;
-  top: 300px;
+  top: 350px;
   left: 250px;
   max-width: 80%;
   height: 450px;

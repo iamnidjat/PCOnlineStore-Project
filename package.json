@@ -10,6 +10,10 @@
     },
     "scripts": {
         "build": "esbuild src/ts/index.ts --bundle --minify --watch --outfile=./wwwroot/index.js",
-        "secondbuild": "esbuild src/ts/aboutus.ts --bundle --minify --watch --outfile=./wwwroot/aboutus.js"
+        "secondbuild": "esbuild src/ts/aboutus.ts --bundle --minify --watch --outfile=./wwwroot/aboutus.js",
+        "thirdbuild": "esbuild src/ts/phones.ts --bundle --minify --watch --outfile=./wwwroot/phones.js",
+        "fourthbuild": "esbuild src/ts/laptops.ts --bundle --minify --watch --outfile=./wwwroot/laptops.js",
+        "fifthbuild": "esbuild src/ts/tablets.ts --bundle --minify --watch --outfile=./wwwroot/tablets.js",
+        "sixthbuild": "esbuild src/ts/wearables.ts --bundle --minify --watch --outfile=./wwwroot/wearables.js"
     }
 }

@@ -163,3 +163,9 @@ a {
   left: 350px;
   top: 1300px;
 }
+.brand-image-video {
+  position: absolute;
+  left: 0;
+  top: 1400px;
+  height: 100px;
+}

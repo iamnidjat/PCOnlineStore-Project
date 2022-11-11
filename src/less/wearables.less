@@ -1,5 +1,8 @@
 // out: "../../wwwroot/"
 @BlackColor: black;
+@WhiteColor: white;
+@LightGrayColor: lightgray;
+@BGColor: rgb(247, 247, 247);
 @AbsolutePosition: absolute;
 @RelativePosition: relative;
 
@@ -14,6 +17,14 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center
+}
+
+.productscustfucntion()
+{
+    border: 1px transparent;
+    height: 400px;
+    width: 270px;
+    background-color: @BGColor;
 }
 
 .main-header{
@@ -95,3 +106,103 @@ a{
 .languages > img:hover{
     opacity: .5;
 }
+
+#goods-type{
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 100px;
+}
+
+.separator{
+    position: @AbsolutePosition;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    opacity: .33;
+}
+
+#first-product{
+    position: @AbsolutePosition;
+    top: 200px;
+    left: 100px;
+    .productscustfucntion();
+}
+
+.product-photo{
+    position: @AbsolutePosition;
+    height: 200px;
+    width: 220px;
+    padding-top: 10px;
+}
+
+.product-desc{
+    position: @AbsolutePosition;
+    top: 230px;
+    height: 50px;
+    width: 150px;
+    padding-left: 30px;
+    color: @BlackColor;
+}
+
+.product-title{
+    position: @AbsolutePosition;
+    top: 180px;
+    height: 50px;
+    width: 150px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: @BlackColor;
+}
+
+.product-conds{
+    position: @AbsolutePosition;
+    color: red;
+    top: 290px;
+    height: 20px;
+    width: 150px;
+    padding-left: 45px;
+}
+
+.product-price{
+    position: @AbsolutePosition;
+    top: 350px;
+    height: 40px;
+    width: 70px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.submit-button{
+    position: @AbsolutePosition;
+    top: 345px;
+    height: 30px;
+    width: 90px;
+    background-color: rgb(72, 244, 72);
+    color: @WhiteColor;
+    margin-left: 100px;
+    border: 1px solid transparent;
+}
+
+
+#second-product{
+    position: @AbsolutePosition;
+    top: 200px;
+    left: 450px;
+    .productscustfucntion();
+}
+
+#third-product{
+    position: @AbsolutePosition;
+    top: 200px;
+    left: 800px;
+    .productscustfucntion();
+}
+
+#fourth-product{
+    position: @AbsolutePosition;
+    top: 200px;
+    left: 1150px;
+    .productscustfucntion();
+}
+
+

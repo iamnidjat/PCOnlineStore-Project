@@ -1,5 +1,8 @@
 // out: "../../wwwroot/"
 @BlackColor: black;
+@WhiteColor: white;
+@LightGrayColor: lightgray;
+@BGColor: rgb(247, 247, 247);
 @AbsolutePosition: absolute;
 @RelativePosition: relative;
 
@@ -14,6 +17,14 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center
+}
+
+.productscustfucntion()
+{
+    border: 1px transparent;
+    height: 400px;
+    width: 270px;
+    background-color: @BGColor;
 }
 
 .main-header{
@@ -63,7 +74,7 @@ a{
 }
 
 #searching-button:hover{
-    background-color: lightgray;
+    background-color: @LightGrayColor;
     opacity: .33;
 }
 
@@ -106,7 +117,6 @@ a{
     position: @AbsolutePosition;
     top: 160px;
     left: 0;
-    text-decoration-thickness: 1px;
     width: 100%;
     opacity: .33;
 }
@@ -116,20 +126,18 @@ a{
     position: @AbsolutePosition;
     top: 200px;
     left: 100px;
-    border: 1px solid;
-    height: 400px;
-    width: 200px;
-    background-color: rgb(244, 240, 240);
+    .productscustfucntion();
+    width: 620px;
 }
 
-#first-product-photo{
+.product-photo{
     position: @AbsolutePosition;
     height: 200px;
     width: 220px;
     padding-top: 10px;
 }
 
-#first-product-desc{
+.product-desc{
     position: @AbsolutePosition;
     top: 230px;
     height: 50px;
@@ -138,7 +146,7 @@ a{
     color: @BlackColor;
 }
 
-#first-product-title{
+.product-title{
     position: @AbsolutePosition;
     top: 180px;
     height: 50px;
@@ -148,7 +156,7 @@ a{
     color: @BlackColor;
 }
 
-#first-product-conds{
+.product-conds{
     position: @AbsolutePosition;
     color: red;
     top: 290px;
@@ -157,7 +165,7 @@ a{
     padding-left: 45px;
 }
 
-#first-product-price{
+.product-price{
     position: @AbsolutePosition;
     top: 350px;
     height: 40px;
@@ -172,22 +180,53 @@ a{
     height: 30px;
     width: 90px;
     background-color: rgb(72, 244, 72);
-    color: white;
+    color: @WhiteColor;
     margin-left: 100px;
     border: 1px solid transparent;
 }
 
-#first-product-quantity
-{
+
+#second-product{
     position: @AbsolutePosition;
-    top: 10px;
-    height: 40px;
-    margin-left: 30px;
+    top: 200px;
+    left: 800px;
+    .productscustfucntion();
 }
 
-////////////////////////////////////////
+#third-product{
+    position: @AbsolutePosition;
+    top: 200px;
+    left: 1150px;
+    .productscustfucntion();
+}
 
+#fourth-product{
+    position: @AbsolutePosition;
+    top: 700px;
+    left: 100px;
+    .productscustfucntion();
+}
 
+#fifth-product{
+    position: @AbsolutePosition;
+    top: 700px;
+    left: 450px;
+    .productscustfucntion();
+}
+
+#sixth-product{
+    position: @AbsolutePosition;
+    top: 700px;
+    left: 800px;
+    .productscustfucntion();
+}
+
+#seventh-product{
+    position: @AbsolutePosition;
+    top: 700px;
+    left: 1150px;
+    .productscustfucntion();
+}
 
 
 

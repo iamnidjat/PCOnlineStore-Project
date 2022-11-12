@@ -1,5 +1,6 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  animation: opacityAnimation 3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .main-header {
   margin: 0 30px;
@@ -86,22 +87,23 @@ a {
   left: 100px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
   background-color: #f7f7f7;
-  width: 620px;
+  width: 300px;
 }
 .product-photo {
   position: absolute;
   height: 200px;
   width: 220px;
   padding-top: 10px;
+  padding-left: 30px;
 }
 .product-desc {
   position: absolute;
   top: 230px;
   height: 50px;
   width: 150px;
-  padding-left: 30px;
+  padding-left: 80px;
+  padding-top: 20px;
   color: black;
 }
 .product-title {
@@ -109,7 +111,8 @@ a {
   top: 180px;
   height: 50px;
   width: 150px;
-  padding-left: 30px;
+  padding-left: 90px;
+  padding-top: 40px;
   text-decoration: none;
   color: black;
 }
@@ -119,14 +122,14 @@ a {
   top: 290px;
   height: 20px;
   width: 150px;
-  padding-left: 45px;
+  padding-left: 80px;
 }
 .product-price {
   position: absolute;
   top: 350px;
   height: 40px;
   width: 70px;
-  margin-left: 10px;
+  padding-left: 60px;
   font-size: 15px;
 }
 .submit-button {
@@ -134,9 +137,9 @@ a {
   top: 345px;
   height: 30px;
   width: 90px;
-  background-color: #48f448;
+  background-color: #48d7f4;
   color: white;
-  margin-left: 100px;
+  margin-left: 150px;
   border: 1px solid transparent;
 }
 #second-product {
@@ -145,7 +148,7 @@ a {
   left: 800px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
+  width: 300px;
   background-color: #f7f7f7;
 }
 #third-product {
@@ -154,42 +157,84 @@ a {
   left: 1150px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
+  width: 300px;
   background-color: #f7f7f7;
 }
 #fourth-product {
   position: absolute;
-  top: 700px;
+  top: 630px;
   left: 100px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
+  width: 300px;
   background-color: #f7f7f7;
 }
 #fifth-product {
   position: absolute;
-  top: 700px;
+  top: 630px;
   left: 450px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
+  width: 300px;
   background-color: #f7f7f7;
 }
 #sixth-product {
   position: absolute;
-  top: 700px;
+  top: 630px;
   left: 800px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
+  width: 300px;
   background-color: #f7f7f7;
 }
 #seventh-product {
   position: absolute;
-  top: 700px;
+  top: 630px;
   left: 1150px;
   border: 1px transparent;
   height: 400px;
-  width: 270px;
+  width: 300px;
   background-color: #f7f7f7;
+}
+#eighth-product {
+  position: absolute;
+  top: 200px;
+  left: 450px;
+  border: 1px transparent;
+  height: 400px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: -530px;
+  left: 0;
+  right: 0;
+  height: 180px;
+  width: 100%;
+}
+footer > * {
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 100px;
+  color: white;
+}
+.customLink {
+  padding: 5px;
+}
+.iconfont {
+  width: 40px;
+  height: 40px;
+}
+.partners {
+  margin-left: -100px;
+}
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

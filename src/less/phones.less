@@ -1,15 +1,17 @@
 // out: "../../wwwroot/"
 @BlackColor: black;
 @WhiteColor: white;
+@RedColor: red;
 @LightGrayColor: lightgray;
 @BGColor: rgb(247, 247, 247);
 @AbsolutePosition: absolute;
 @RelativePosition: relative;
+@FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+body{
+    animation: opacityAnimation 3s;
+    font-family: @FontFamily;
 }
-
 .flexfunction()
 {
     display: flex;
@@ -23,7 +25,7 @@ body {
 {
     border: 1px transparent;
     height: 400px;
-    width: 270px;
+    width: 300px;
     background-color: @BGColor;
 }
 
@@ -121,13 +123,12 @@ a{
     opacity: .33;
 }
 
-//////////////////////////
 #first-product{
     position: @AbsolutePosition;
     top: 200px;
     left: 100px;
     .productscustfucntion();
-    width: 620px;
+    width: 300px;
 }
 
 .product-photo{
@@ -135,6 +136,7 @@ a{
     height: 200px;
     width: 220px;
     padding-top: 10px;
+    padding-left: 30px;
 }
 
 .product-desc{
@@ -142,7 +144,8 @@ a{
     top: 230px;
     height: 50px;
     width: 150px;
-    padding-left: 30px;
+    padding-left: 80px;
+    padding-top: 20px;
     color: @BlackColor;
 }
 
@@ -151,18 +154,19 @@ a{
     top: 180px;
     height: 50px;
     width: 150px;
-    padding-left: 30px;
+    padding-left: 90px;
+    padding-top: 40px;
     text-decoration: none;
     color: @BlackColor;
 }
 
 .product-conds{
     position: @AbsolutePosition;
-    color: red;
+    color: @RedColor;
     top: 290px;
     height: 20px;
     width: 150px;
-    padding-left: 45px;
+    padding-left: 80px;
 }
 
 .product-price{
@@ -170,7 +174,7 @@ a{
     top: 350px;
     height: 40px;
     width: 70px;
-    margin-left: 10px;
+    padding-left: 60px;
     font-size: 15px;
 }
 
@@ -179,12 +183,11 @@ a{
     top: 345px;
     height: 30px;
     width: 90px;
-    background-color: rgb(72, 244, 72);
+    background-color: rgb(72, 215, 244);
     color: @WhiteColor;
-    margin-left: 100px;
+    margin-left: 150px;
     border: 1px solid transparent;
 }
-
 
 #second-product{
     position: @AbsolutePosition;
@@ -202,33 +205,69 @@ a{
 
 #fourth-product{
     position: @AbsolutePosition;
-    top: 700px;
+    top: 630px;
     left: 100px;
     .productscustfucntion();
 }
 
 #fifth-product{
     position: @AbsolutePosition;
-    top: 700px;
+    top: 630px;
     left: 450px;
     .productscustfucntion();
 }
 
 #sixth-product{
     position: @AbsolutePosition;
-    top: 700px;
+    top: 630px;
     left: 800px;
     .productscustfucntion();
 }
 
 #seventh-product{
     position: @AbsolutePosition;
-    top: 700px;
+    top: 630px;
     left: 1150px;
     .productscustfucntion();
 }
 
+#eighth-product{
+    position: @AbsolutePosition;
+    top: 200px;
+    left: 450px;
+    .productscustfucntion();
+}
 
+footer{
+    background-color: @BlackColor;
+    position: @AbsolutePosition;
+    bottom: -530px;
+    left: 0;
+    right: 0;
+    height: 180px;
+    width: 100%;
+}
+
+footer > *
+{
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 100px;
+    color: @WhiteColor;
+}
+
+.customLink{
+    padding: 5px;
+}
+
+.iconfont{
+    width: 40px;
+    height: 40px;
+}
+
+.partners{
+    margin-left: -100px;
+}
 
 
 // #navigation-div{
@@ -236,3 +275,13 @@ a{
 //     top: 15px;
 //     left: 100px;
 // }
+
+@keyframes opacityAnimation
+  {
+      from{
+          opacity: 0;
+      };
+      to{
+          opacity: 1;
+      };
+  }

@@ -1,0 +1,74 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main-header {
+  margin: 0 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 0;
+}
+.logo-home {
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+}
+.main-header > a > span {
+  color: black;
+}
+a:active {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.categories {
+  margin-left: 150px;
+}
+.categories > a {
+  padding: 20px;
+  cursor: pointer;
+}
+#searching-button {
+  height: 30px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-bottom: -8px;
+  background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
+  background-repeat: no-repeat;
+}
+#searching-button:hover {
+  background-color: lightgray;
+  opacity: 0.33;
+}
+#search-box {
+  width: 300px;
+  height: 25px;
+  font-size: 20px;
+  margin-left: 100px;
+  border: 1px solid transparent;
+}
+.languages,
+.categories {
+  display: inline-block;
+}
+.languages {
+  margin-left: 10px;
+}
+::placeholder {
+  padding: 2px;
+}
+.UK,
+.Russia,
+.Azerbaijan {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.languages > img:hover {
+  opacity: 0.5;
+}

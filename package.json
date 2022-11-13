@@ -14,6 +14,8 @@
         "thirdbuild": "esbuild src/ts/phones.ts --bundle --minify --watch --outfile=./wwwroot/phones.js",
         "fourthbuild": "esbuild src/ts/laptops.ts --bundle --minify --watch --outfile=./wwwroot/laptops.js",
         "fifthbuild": "esbuild src/ts/tablets.ts --bundle --minify --watch --outfile=./wwwroot/tablets.js",
-        "sixthbuild": "esbuild src/ts/wearables.ts --bundle --minify --watch --outfile=./wwwroot/wearables.js"
+        "sixthbuild": "esbuild src/ts/wearables.ts --bundle --minify --watch --outfile=./wwwroot/wearables.js",
+        "seventhbuild": "esbuild src/ts/purchases.ts --bundle --minify --watch --outfile=./wwwroot/purchases.js",
+        "eighthbuild": "esbuild src/ts/buyingForm.ts --bundle --minify --watch --outfile=./wwwroot/buyingForm.js"
     }
 }

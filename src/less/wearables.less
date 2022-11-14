@@ -30,6 +30,19 @@ body{
     background-color: @BGColor;
 }
 
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;   
+}
+
+#nav
+{
+    .text-decorations();
+}
+
 .main-header{
     margin: 0 30px;
     position: @AbsolutePosition;
@@ -64,6 +77,10 @@ a{
 .categories > a {
     padding: 20px;
     cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: black;
 }
 
 #searching-button{

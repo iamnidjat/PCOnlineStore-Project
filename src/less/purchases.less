@@ -16,6 +16,19 @@ body {
     align-content: center
 }
 
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;   
+}
+
+#nav
+{
+    .text-decorations();
+}
+
 .main-header{
     margin: 0 30px;
     position: @AbsolutePosition;
@@ -99,8 +112,19 @@ a{
     opacity: .5;
 }
 
+#ad{
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 100px;
+}
 
-
+.separator{
+    position: @AbsolutePosition;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    opacity: .33;
+}
 // footer{
 //     background-color: @BlackColor;
 //     position: @AbsolutePosition;

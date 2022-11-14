@@ -2,6 +2,12 @@ body {
   animation: opacityAnimation 3s;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+#nav {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 10px;
+}
 .main-header {
   margin: 0 30px;
   position: absolute;
@@ -30,6 +36,9 @@ a {
 .categories > a {
   padding: 20px;
   cursor: pointer;
+}
+.submit-button:hover {
+  background-color: black;
 }
 #searching-button {
   height: 30px;

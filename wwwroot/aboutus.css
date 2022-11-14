@@ -1,6 +1,12 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+#nav {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 10px;
+}
 .main-header {
   margin: 0 30px;
   position: absolute;

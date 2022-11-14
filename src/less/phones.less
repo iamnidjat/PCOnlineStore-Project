@@ -12,6 +12,15 @@ body{
     animation: opacityAnimation 3s;
     font-family: @FontFamily;
 }
+
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;   
+}
+
 .flexfunction()
 {
     display: flex;
@@ -27,6 +36,11 @@ body{
     height: 400px;
     width: 300px;
     background-color: @BGColor;
+}
+
+#nav
+{
+    .text-decorations();
 }
 
 .main-header{
@@ -239,6 +253,10 @@ a{
     top: 200px;
     left: 450px;
     .productscustfucntion();
+}
+
+.submit-button:hover{
+    background-color: black;
 }
 
 footer{

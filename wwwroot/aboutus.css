@@ -8,12 +8,15 @@ body {
   text-underline-offset: 10px;
 }
 .main-header {
-  margin: 0 30px;
-  position: absolute;
+  padding: 30px;
+  position: fixed;
+  z-index: 1000;
   left: 0;
   right: 0;
-  top: 20px;
+  top: 0;
   bottom: 0;
+  background-color: white;
+  height: 40px;
 }
 .logo-home {
   width: 100px;
@@ -173,9 +176,10 @@ a {
   left: 350px;
   top: 1300px;
 }
-.brand-image-video {
+.video {
   position: absolute;
   left: 0;
   top: 1400px;
-  height: 100px;
+  height: 500px;
+  width: 100%;
 }

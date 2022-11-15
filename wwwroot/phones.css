@@ -218,13 +218,18 @@ a {
 .submit-button:hover {
   background-color: black;
 }
+.theme-switcher {
+  background-color: black;
+  color: white;
+  border: none;
+}
 footer {
   background-color: black;
   position: absolute;
   bottom: -530px;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 230px;
   width: 100%;
 }
 footer > * {

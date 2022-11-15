@@ -164,13 +164,18 @@ a {
   width: 400px;
   background-color: #f7f7f7;
 }
+.theme-switcher {
+  background-color: black;
+  color: white;
+  border: none;
+}
 footer {
   background-color: black;
   position: absolute;
   bottom: -120px;
   left: 0;
   right: 0;
-  height: 200px;
+  height: 230px;
   width: 100%;
 }
 footer > * {

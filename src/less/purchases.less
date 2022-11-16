@@ -2,6 +2,7 @@
 @BlackColor: black;
 @WhiteColor: white;
 @RedColor: red;
+@BlueColor: blue;
 @LightGrayColor: lightgray;
 @BGColor: rgb(247, 247, 247);
 @AbsolutePosition: absolute;
@@ -134,6 +135,29 @@ a{
     width: 100%;
     opacity: .33;
 }
+
+.scrolltopButton{
+    display: none;
+    position: @FixedPosition;
+    bottom: 200px; 
+    left: 30px; 
+    width: 40px;
+    height: 40px;
+    z-index: 1001;
+    border: none;
+    outline: none;
+    background-color: @BlueColor;
+    color: @WhiteColor;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 22px; 
+}
+
+.scrolltopButton:hover {
+    background-color: #555;
+}
+
 // footer{
 //     background-color: @BlackColor;
 //     position: @AbsolutePosition;

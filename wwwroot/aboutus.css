@@ -183,3 +183,23 @@ a {
   height: 500px;
   width: 100%;
 }
+.scrolltopButton {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1001;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50px;
+  font-size: 22px;
+}
+.scrolltopButton:hover {
+  background-color: #555;
+}

@@ -89,24 +89,20 @@ a{
     width: 50px;
     border: none;
     background-color: transparent;
-    margin-left: 5px;
+    margin-left: 15px;
     cursor: pointer;
     margin-bottom: -8px;
     background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
     background-repeat: no-repeat;
 }
 
-#searching-button:hover{
-    background-color: @LightGrayColor;
-    opacity: .33;
-}
-
 #search-box{
     width: 300px;
     height: 25px;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 120px;
     border: 1px solid transparent;
+    background-color: transparent;
 }
 
 .languages, .categories{
@@ -114,7 +110,7 @@ a{
 }
 
 .languages{
-    margin-left: 20px;
+    padding: 10px;
 }
 
 ::placeholder{
@@ -124,11 +120,11 @@ a{
 .UK, .Russia, .Azerbaijan{
     width: 30px;
     height: 30px;
-    cursor: pointer;
 }
 
 .languages > img:hover{
     opacity: .5;
+    cursor: pointer;
 }
 
 #goods-type{
@@ -268,15 +264,20 @@ a{
     background-color: @BlackColor;
     color: @WhiteColor;
     border: none;
+    cursor: pointer;
+}
+
+.theme-switcher:hover{
+    opacity: .5
 }
 
 footer{
     background-color: @BlackColor;
     position: @AbsolutePosition;
-    bottom: -530px;
+    bottom: -650px;
     left: 0;
     right: 0;
-    height: 230px;
+    height: 300px;
     width: 100%;
 }
 
@@ -289,7 +290,11 @@ footer > *
 }
 
 .customLink{
-    padding: 5px;
+    padding: -5px;
+}
+
+.customLink:hover{
+    opacity: .5;
 }
 
 .iconfont{

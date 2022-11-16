@@ -9,8 +9,9 @@
 @FixedPosition: fixed;
 @FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+body{
+    animation: opacityAnimation 3s;
+    font-family: @FontFamily;
 }
 
 .flexfunction()
@@ -192,7 +193,15 @@ a{
 
 
 
-
+@keyframes opacityAnimation
+{
+      from{
+          opacity: 0;
+      };
+      to{
+          opacity: 1;
+      };
+}
 
 
 

@@ -48,29 +48,26 @@ a {
   width: 50px;
   border: none;
   background-color: transparent;
-  margin-left: 5px;
+  margin-left: 15px;
   cursor: pointer;
   margin-bottom: -8px;
   background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
   background-repeat: no-repeat;
 }
-#searching-button:hover {
-  background-color: lightgray;
-  opacity: 0.33;
-}
 #search-box {
   width: 300px;
   height: 25px;
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 120px;
   border: 1px solid transparent;
+  background-color: transparent;
 }
 .languages,
 .categories {
   display: inline-block;
 }
 .languages {
-  margin-left: 20px;
+  padding: 10px;
 }
 ::placeholder {
   padding: 2px;
@@ -80,10 +77,10 @@ a {
 .Azerbaijan {
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
 .languages > img:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 #goods-type {
   position: absolute;
@@ -226,14 +223,18 @@ a {
   background-color: black;
   color: white;
   border: none;
+  cursor: pointer;
+}
+.theme-switcher:hover {
+  opacity: 0.5;
 }
 footer {
   background-color: black;
   position: absolute;
-  bottom: -530px;
+  bottom: -650px;
   left: 0;
   right: 0;
-  height: 230px;
+  height: 300px;
   width: 100%;
 }
 footer > * {
@@ -243,7 +244,10 @@ footer > * {
   color: white;
 }
 .customLink {
-  padding: 5px;
+  padding: -5px;
+}
+.customLink:hover {
+  opacity: 0.5;
 }
 .iconfont {
   width: 40px;

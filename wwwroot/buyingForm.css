@@ -1,5 +1,12 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  animation: opacityAnimation 3s;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nav {
+  text-decoration: underline;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 10px;
 }
 .main-header {
   padding: 30px;
@@ -38,29 +45,26 @@ a {
   width: 50px;
   border: none;
   background-color: transparent;
-  margin-left: 5px;
+  margin-left: 15px;
   cursor: pointer;
   margin-bottom: -8px;
   background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
   background-repeat: no-repeat;
 }
-#searching-button:hover {
-  background-color: lightgray;
-  opacity: 0.33;
-}
 #search-box {
   width: 300px;
   height: 25px;
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 120px;
   border: 1px solid transparent;
+  background-color: transparent;
 }
 .languages,
 .categories {
   display: inline-block;
 }
 .languages {
-  margin-left: 10px;
+  padding: 10px;
 }
 ::placeholder {
   padding: 2px;
@@ -70,8 +74,173 @@ a {
 .Azerbaijan {
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
 .languages > img:hover {
   opacity: 0.5;
+  cursor: pointer;
+}
+#ad {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.separator {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  width: 100%;
+  opacity: 0.33;
+}
+#nameLabel {
+  position: absolute;
+  left: 100px;
+  width: 150px;
+  font-size: 20px;
+  top: 200px;
+}
+#surnameLabel {
+  position: absolute;
+  left: 100px;
+  width: 150px;
+  font-size: 20px;
+  top: 250px;
+}
+#lastnameLabel {
+  position: absolute;
+  left: 100px;
+  width: 150px;
+  font-size: 20px;
+  top: 300px;
+}
+#phoneLabel {
+  position: absolute;
+  left: 100px;
+  width: 150px;
+  font-size: 20px;
+  top: 350px;
+}
+#productLabel {
+  position: absolute;
+  left: 100px;
+  width: 150px;
+  font-size: 20px;
+  top: 400px;
+}
+#priceLabel {
+  position: absolute;
+  left: 100px;
+  width: 150px;
+  font-size: 20px;
+  top: 450px;
+}
+#nameBox {
+  position: absolute;
+  left: 250px;
+  width: 250px;
+  font-size: 20px;
+  top: 200px;
+}
+#surnameBox {
+  position: absolute;
+  left: 250px;
+  width: 250px;
+  font-size: 20px;
+  top: 250px;
+}
+#lastnameBox {
+  position: absolute;
+  left: 250px;
+  width: 250px;
+  font-size: 20px;
+  top: 300px;
+}
+#phoneBox {
+  position: absolute;
+  left: 250px;
+  width: 250px;
+  font-size: 20px;
+  top: 350px;
+}
+#resetButton {
+  position: absolute;
+  top: 500px;
+  width: 150px;
+  font-size: 20px;
+  left: 150px;
+}
+#confirmButton {
+  position: absolute;
+  top: 500px;
+  width: 150px;
+  font-size: 20px;
+  left: 350px;
+}
+.buyingForm {
+  position: absolute;
+  top: 50px;
+}
+.theme-switcher {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.theme-switcher:hover {
+  opacity: 0.5;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: -250px;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 100%;
+}
+footer > * {
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 100px;
+  color: white;
+}
+.customLink {
+  padding: -5px;
+}
+.customLink:hover {
+  opacity: 0.5;
+}
+.iconfont {
+  width: 40px;
+  height: 40px;
+}
+.partners {
+  margin-left: -100px;
+}
+.scrolltopButton {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1001;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50px;
+  font-size: 22px;
+}
+.scrolltopButton:hover {
+  background-color: #555;
+}
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

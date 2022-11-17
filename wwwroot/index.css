@@ -99,6 +99,11 @@ a {
   font-size: 30px;
   color: rgba(0, 0, 0, 0.4);
 }
+.HonorMagic4ProAD > h3 {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
 .Honor70btn {
   display: flex;
   flex-direction: row;

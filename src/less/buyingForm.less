@@ -2,6 +2,7 @@
 @BlackColor: black;
 @WhiteColor: white;
 @RedColor: red;
+@BlueColor: blue;
 @LightGrayColor: lightgray;
 @BGColor: rgb(247, 247, 247);
 @AbsolutePosition: absolute;
@@ -9,8 +10,17 @@
 @FixedPosition: fixed;
 @FontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+body{
+    animation: opacityAnimation 3s;
+    font-family: @FontFamily;
+}
+
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;   
 }
 
 .flexfunction()
@@ -20,6 +30,19 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center
+}
+
+.productscustfucntion()
+{
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: @BGColor;
+}
+
+#nav
+{
+    .text-decorations();
 }
 
 .main-header{
@@ -66,24 +89,20 @@ a{
     width: 50px;
     border: none;
     background-color: transparent;
-    margin-left: 5px;
+    margin-left: 15px;
     cursor: pointer;
     margin-bottom: -8px;
     background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
     background-repeat: no-repeat;
 }
 
-#searching-button:hover{
-    background-color: lightgray;
-    opacity: .33;
-}
-
 #search-box{
     width: 300px;
     height: 25px;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 120px;
     border: 1px solid transparent;
+    background-color: transparent;
 }
 
 .languages, .categories{
@@ -91,7 +110,7 @@ a{
 }
 
 .languages{
-    margin-left: 10px;
+    padding: 10px;
 }
 
 ::placeholder{
@@ -101,51 +120,190 @@ a{
 .UK, .Russia, .Azerbaijan{
     width: 30px;
     height: 30px;
-    cursor: pointer;
 }
 
 .languages > img:hover{
     opacity: .5;
+    cursor: pointer;
 }
 
+#ad{
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 100px;
+}
 
-//footer{
-    //     background-color: @BlackColor;
-    //     position: @AbsolutePosition;
-    //     bottom: -530px;
-    //     left: 0;
-    //     right: 0;
-    //     height: 200px;
-    //     width: 100%;
-    // }
-    
-    // footer > *
-    // {
-    //     padding: 5px;
-    //     font-size: 15px;
-    //     margin-left: 100px;
-    //     color: @WhiteColor;
-    // }
-    
-    // .customLink{
-    //     padding: 5px;
-    // }
-    
-    // .iconfont{
-    //     width: 40px;
-    //     height: 40px;
-    // }
-    
-    // .partners{
-    //     margin-left: -100px;
-    // }
-    
-    // @keyframes opacityAnimation
-    //   {
-    //       from{
-    //           opacity: 0;
-    //       };
-    //       to{
-    //           opacity: 1;
-    //       };
-    //   }
+.separator{
+    position: @AbsolutePosition;
+    top: 160px;
+    left: 0;
+    width: 100%;
+    opacity: .33;
+}
+
+.labelFunc()
+{
+    position: @AbsolutePosition;
+    left: 100px;
+    width: 150px;
+    font-size: 20px;
+}
+
+.textboxFunc()
+{
+    position: @AbsolutePosition;
+    left: 250px;
+    width: 250px;
+    font-size: 20px;
+}
+
+#nameLabel{
+    .labelFunc();
+    top: 200px;
+}
+
+#surnameLabel{
+    .labelFunc();
+    top: 250px;
+}
+
+#lastnameLabel{
+    .labelFunc();
+    top: 300px;
+}
+
+#phoneLabel{
+    .labelFunc();
+    top: 350px;
+}
+
+#productLabel{
+    .labelFunc();
+    top: 400px;
+}
+
+#priceLabel{
+    .labelFunc();
+    top: 450px;
+}
+
+#nameBox{
+    .textboxFunc();
+    top: 200px;
+}
+
+#surnameBox{
+    .textboxFunc();
+    top: 250px;
+}
+
+#lastnameBox{
+    .textboxFunc();
+    top: 300px;
+}
+
+#phoneBox{
+    .textboxFunc();
+    top: 350px;
+}
+
+.buttonFunc()
+{
+    position: @AbsolutePosition;
+    top: 500px;
+    width: 150px;
+    font-size: 20px;
+}
+
+#resetButton{
+    .buttonFunc();
+    left: 150px;
+}
+
+#confirmButton{
+    .buttonFunc();
+    left: 350px;
+}
+
+.buyingForm{
+    position: @AbsolutePosition;
+    top: 50px;
+}
+
+.theme-switcher{
+    background-color: @BlackColor;
+    color: @WhiteColor;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-switcher:hover{
+    opacity: .5
+}
+
+footer{
+    background-color: @BlackColor;
+    position: @AbsolutePosition;
+    bottom: -250px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 100%;
+}
+
+footer > *
+{
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 100px;
+    color: @WhiteColor;
+}
+
+.customLink{
+    padding: -5px;
+}
+
+.customLink:hover{
+    opacity: .5;
+}
+
+.iconfont{
+    width: 40px;
+    height: 40px;
+}
+
+.partners{
+    margin-left: -100px;
+}
+
+.scrolltopButton{
+    display: none;
+    position: @FixedPosition;
+    bottom: 200px; 
+    left: 30px; 
+    width: 40px;
+    height: 40px;
+    z-index: 1001;
+    border: none;
+    outline: none;
+    background-color: @BlueColor;
+    color: @WhiteColor;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 22px; 
+}
+
+.scrolltopButton:hover {
+    background-color: #555;
+}
+
+@keyframes opacityAnimation
+  {
+      from{
+          opacity: 0;
+      };
+      to{
+          opacity: 1;
+      };
+  }

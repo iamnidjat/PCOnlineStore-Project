@@ -132,14 +132,6 @@ a {
   text-decoration: none;
   color: black;
 }
-.product-conds {
-  position: absolute;
-  color: red;
-  top: 290px;
-  height: 20px;
-  width: 150px;
-  padding-left: 120px;
-}
 .product-price {
   position: absolute;
   top: 350px;

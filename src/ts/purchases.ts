@@ -4,6 +4,7 @@ $(function f()
 {
     let $switcher = $(".theme-switcher");
     let $scrollTopBUtton = $(".scrolltopButton");
+    let $buyButton = $(".submit-button");
 
     $switcher.on("click", () => {
         $switcher.val("Dark theme");
@@ -25,5 +26,18 @@ $(function f()
       {
           $scrollTopBUtton.fadeOut();
       }
+  });
+
+  $buyButton.on("submit", () => 
+  {
+      $.ajax({
+          url: ``,
+          success: (data) =>
+          {
+
+          },
+          method: "GET",
+          crossDomain: true,
+      });
   });
 });

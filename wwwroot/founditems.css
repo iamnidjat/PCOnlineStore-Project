@@ -91,104 +91,6 @@ a {
   width: 100%;
   opacity: 0.33;
 }
-#nameLabel {
-  position: absolute;
-  left: 100px;
-  width: 150px;
-  font-size: 20px;
-  top: 200px;
-}
-#surnameLabel {
-  position: absolute;
-  left: 100px;
-  width: 150px;
-  font-size: 20px;
-  top: 250px;
-}
-#lastnameLabel {
-  position: absolute;
-  left: 100px;
-  width: 150px;
-  font-size: 20px;
-  top: 300px;
-}
-#phoneLabel {
-  position: absolute;
-  left: 100px;
-  width: 150px;
-  font-size: 20px;
-  top: 350px;
-}
-#productLabel {
-  position: absolute;
-  left: 100px;
-  width: 150px;
-  font-size: 20px;
-  top: 400px;
-}
-#priceLabel {
-  position: absolute;
-  left: 100px;
-  width: 150px;
-  font-size: 20px;
-  top: 450px;
-}
-#nameBox {
-  position: absolute;
-  left: 250px;
-  width: 250px;
-  font-size: 20px;
-  top: 200px;
-}
-#surnameBox {
-  position: absolute;
-  left: 250px;
-  width: 250px;
-  font-size: 20px;
-  top: 250px;
-}
-#lastnameBox {
-  position: absolute;
-  left: 250px;
-  width: 250px;
-  font-size: 20px;
-  top: 300px;
-}
-#phoneBox {
-  position: absolute;
-  left: 250px;
-  width: 250px;
-  font-size: 20px;
-  top: 350px;
-}
-#resetButton {
-  position: absolute;
-  top: 500px;
-  width: 150px;
-  font-size: 20px;
-  background-color: #48d7f4;
-  color: white;
-  border: 1px solid transparent;
-  left: 150px;
-}
-#confirmButton {
-  position: absolute;
-  top: 500px;
-  width: 150px;
-  font-size: 20px;
-  background-color: #48d7f4;
-  color: white;
-  border: 1px solid transparent;
-  left: 350px;
-}
-#resetButton:hover,
-#confirmButton:hover {
-  background-color: black;
-}
-.buyingForm {
-  position: absolute;
-  top: 50px;
-}
 .theme-switcher {
   background-color: black;
   color: white;
@@ -201,7 +103,7 @@ a {
 footer {
   background-color: black;
   position: absolute;
-  bottom: -220px;
+  bottom: -650px;
   left: 0;
   right: 0;
   height: 300px;

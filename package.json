@@ -16,6 +16,7 @@
         "fifthbuild": "esbuild src/ts/tablets.ts --bundle --minify --watch --outfile=./wwwroot/tablets.js",
         "sixthbuild": "esbuild src/ts/wearables.ts --bundle --minify --watch --outfile=./wwwroot/wearables.js",
         "seventhbuild": "esbuild src/ts/purchases.ts --bundle --minify --watch --outfile=./wwwroot/purchases.js",
-        "eighthbuild": "esbuild src/ts/buyingForm.ts --bundle --minify --watch --outfile=./wwwroot/buyingForm.js"
+        "eighthbuild": "esbuild src/ts/buyingForm.ts --bundle --minify --watch --outfile=./wwwroot/buyingForm.js",
+        "ninthhbuild": "esbuild src/ts/founditems.ts --bundle --minify --watch --outfile=./wwwroot/founditems.js"
     }
 }

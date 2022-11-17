@@ -33,4 +33,17 @@ $(function f()
           $scrollTopBUtton.fadeOut();
       }
   });
+
+  $buyButton.on("submit", () => 
+  {
+      $.ajax({
+          url: ``,
+          success: (data) =>
+          {
+
+          },
+          method: "GET",
+          crossDomain: true,
+      });
+  });
 });

@@ -79,18 +79,11 @@ a {
   opacity: 0.5;
   cursor: pointer;
 }
-.main-video {
-  position: absolute;
-  left: 0;
-  top: 100px;
-  width: 100vw;
-  height: 300px;
-}
 .about-honor {
   font-size: 2vw;
   position: relative;
   padding-bottom: 2vw;
-  top: 450px;
+  top: 100px;
   left: 650px;
 }
 .about-honor::after {
@@ -108,14 +101,14 @@ a {
   text-align: center;
   margin: 0 auto;
   position: absolute;
-  bottom: 0;
+  top: 250px;
   left: 350px;
 }
 .about-title {
   font-size: 2vw;
   position: relative;
   padding-bottom: 2vw;
-  top: 680px;
+  top: 400px;
   left: 550px;
 }
 .about-title::after {
@@ -135,13 +128,13 @@ a {
   position: absolute;
   bottom: 0;
   left: 350px;
-  top: 900px;
+  top: 630px;
 }
 .create-flex.multiple-row {
   position: absolute;
   bottom: 0;
   left: 350px;
-  top: 1100px;
+  top: 900px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -156,7 +149,7 @@ a {
   position: absolute;
   bottom: 0;
   left: 350px;
-  top: 1230px;
+  top: 1030px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -171,13 +164,13 @@ a {
   margin: 0 auto;
   word-break: break-word;
   position: absolute;
-  left: 350px;
-  top: 1300px;
+  left: 600px;
+  top: 1100px;
 }
 .video {
   position: absolute;
   left: 0;
-  top: 1400px;
+  top: 1250px;
   height: 500px;
   width: 100%;
 }
@@ -213,7 +206,7 @@ a {
 footer {
   background-color: black;
   position: absolute;
-  bottom: -1520px;
+  bottom: -1370px;
   left: 0;
   right: 0;
   height: 300px;

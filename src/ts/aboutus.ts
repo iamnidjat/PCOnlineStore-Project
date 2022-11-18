@@ -2,7 +2,6 @@ import $ from "jquery";
 
 $(function f()
 {
-    let $buyButton = $(".submit-button");
     let $switcher = $(".theme-switcher");
     let $scrollTopBUtton = $(".scrolltopButton");
     let $searchBox = $("#search-box").val();

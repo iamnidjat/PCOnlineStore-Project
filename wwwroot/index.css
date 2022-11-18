@@ -39,29 +39,26 @@ a {
   width: 50px;
   border: none;
   background-color: transparent;
-  margin-left: 5px;
-  margin-bottom: -8px;
+  margin-left: 15px;
   cursor: pointer;
+  margin-bottom: -8px;
   background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
   background-repeat: no-repeat;
-}
-#searching-button:hover {
-  background-color: lightgray;
-  opacity: 0.33;
 }
 #search-box {
   width: 300px;
   height: 25px;
   font-size: 20px;
-  margin-left: 50px;
+  margin-left: 120px;
   border: 1px solid transparent;
+  background-color: transparent;
 }
 .languages,
 .categories {
   display: inline-block;
 }
 .languages {
-  margin-left: 30px;
+  padding: 10px;
 }
 ::placeholder {
   padding: 2px;
@@ -71,10 +68,10 @@ a {
 .Azerbaijan {
   width: 30px;
   height: 30px;
-  cursor: pointer;
 }
 .languages > img:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 .honorimg {
   width: 300px;
@@ -102,7 +99,17 @@ a {
 .HonorMagic4ProAD > h3 {
   position: absolute;
   top: 30px;
-  left: 10px;
+  left: 0;
+}
+.HonorMagicMB14AD > h3 {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+.HonorMagicGS3AD > h3 {
+  position: absolute;
+  top: 30px;
+  left: 0;
 }
 .Honor70btn {
   display: flex;
@@ -153,10 +160,111 @@ a {
 }
 .honorMagic4ProPhoto {
   position: relative;
-  top: 350px;
+  top: 450px;
   left: 250px;
   max-width: 80%;
   height: 450px;
+}
+.honorMB14Photo {
+  position: relative;
+  top: 550px;
+  left: 50px;
+  max-width: 50%;
+  height: 350px;
+}
+.HonorMagicMB14AD {
+  position: relative;
+  top: 500px;
+  left: 100px;
+}
+.HonorMagicGS3AD {
+  position: relative;
+  top: 40px;
+  left: 1000px;
+}
+.honorMB14btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+.honorGS3btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 120px;
+  left: 50px;
+}
+.honorGS3Photo {
+  position: relative;
+  top: 100px;
+  left: 950px;
+  max-width: 50%;
+  height: 350px;
+}
+.theme-switcher {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.theme-switcher:hover {
+  opacity: 0.5;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: -1600px;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 100%;
+}
+footer > * {
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 100px;
+  color: white;
+}
+.customLink {
+  padding: -5px;
+}
+.customLink:hover {
+  opacity: 0.5;
+}
+.iconfont {
+  width: 40px;
+  height: 40px;
+}
+.partners {
+  margin-left: -100px;
+}
+.scrolltopButton {
+  display: none;
+  position: fixed;
+  bottom: 200px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  z-index: 1001;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50px;
+  font-size: 22px;
+}
+.scrolltopButton:hover {
+  background-color: #555;
 }
 @keyframes opacityAnimation {
   from {

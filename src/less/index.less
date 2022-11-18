@@ -1,7 +1,9 @@
 // out: "../../wwwroot/"
 @BlackColor: black;
+@BlackColor: black;
 @WhiteColor: white;
 @RedColor: red;
+@BlueColor: blue;
 @LightGrayColor: lightgray;
 @BGColor: rgb(247, 247, 247);
 @AbsolutePosition: absolute;
@@ -23,10 +25,6 @@ body{
     align-content: center
 }
 
-// main{
-//     background-color: rgb(249, 249, 249);
-// }
-
 .main-header{
     padding: 30px;
     position: @FixedPosition;
@@ -37,7 +35,7 @@ body{
     bottom: 0;
     background-color: @WhiteColor;
     height: 40px;
-}  
+}   
 
 .logo-home{
     width: 100px;
@@ -71,24 +69,20 @@ a{
     width: 50px;
     border: none;
     background-color: transparent;
-    margin-left: 5px;
-    margin-bottom: -8px;
+    margin-left: 15px;
     cursor: pointer;
+    margin-bottom: -8px;
     background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
     background-repeat: no-repeat;
-}
-
-#searching-button:hover{
-    background-color: lightgray;
-    opacity: .33;
 }
 
 #search-box{
     width: 300px;
     height: 25px;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 120px;
     border: 1px solid transparent;
+    background-color: transparent;
 }
 
 .languages, .categories{
@@ -96,7 +90,7 @@ a{
 }
 
 .languages{
-    margin-left: 30px;
+    padding: 10px;
 }
 
 ::placeholder{
@@ -106,11 +100,11 @@ a{
 .UK, .Russia, .Azerbaijan{
     width: 30px;
     height: 30px;
-    cursor: pointer;
 }
 
 .languages > img:hover{
     opacity: .5;
+    cursor: pointer;
 }
 
 .honorimg{
@@ -122,6 +116,7 @@ a{
     position: @AbsolutePosition;
     top: 80px;
     left: 600px;
+   // background-color: @LightGrayColor;
 }
 
 .HonorMagic4ProAD{
@@ -139,7 +134,19 @@ a{
 .HonorMagic4ProAD > h3{
     position: @AbsolutePosition;
     top: 30px;
-    left: 10px;
+    left: 0;
+}
+
+.HonorMagicMB14AD > h3{
+    position: @AbsolutePosition;
+    top: 30px;
+    left: -20px;
+}
+
+.HonorMagicGS3AD > h3{
+    position: @AbsolutePosition;
+    top: 30px;
+    left: 0;
 }
 
 .Honor70btn{
@@ -185,13 +192,122 @@ a{
 
 .honorMagic4ProPhoto{
     position: @RelativePosition;
-    top: 350px;
+    top: 450px;
     left: 250px;
     max-width: 80%;
     height: 450px;
 }
 
+.honorMB14Photo{
+    position: @RelativePosition;
+    top: 550px;
+    left: 50px;
+    max-width: 50%;
+    height: 350px;
+}
 
+.HonorMagicMB14AD{
+    position: @RelativePosition;
+    top: 500px;
+    left: 100px;
+}
+
+.HonorMagicGS3AD
+{
+    position: @RelativePosition;
+    top: 40px;
+    left: 1000px;
+}
+
+.honorMB14btn{
+    .flexfunction();
+    position: @AbsolutePosition;
+    top: 120px;
+    left: 50px;
+}
+
+.honorGS3btn{
+    .flexfunction();
+    position: @AbsolutePosition;
+    top: 120px;
+    left: 50px;
+}
+
+.honorGS3Photo{
+    position: @RelativePosition;
+    top: 100px;
+    left: 950px;
+    max-width: 50%;
+    height: 350px;
+}
+
+.theme-switcher{
+    background-color: @BlackColor;
+    color: @WhiteColor;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-switcher:hover{
+    opacity: .5
+}
+
+footer{
+    background-color: @BlackColor;
+    position: @AbsolutePosition;
+    bottom: -1600px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 100%;
+}
+
+footer > *
+{
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 100px;
+    color: @WhiteColor;
+}
+
+.customLink{
+    padding: -5px;
+}
+
+.customLink:hover{
+    opacity: .5;
+}
+
+.iconfont{
+    width: 40px;
+    height: 40px;
+}
+
+.partners{
+    margin-left: -100px;
+}
+
+.scrolltopButton{
+    display: none;
+    position: @FixedPosition;
+    bottom: 200px; 
+    left: 30px; 
+    width: 40px;
+    height: 40px;
+    z-index: 1001;
+    border: none;
+    outline: none;
+    background-color: @BlueColor;
+    color: @WhiteColor;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    font-size: 22px; 
+}
+
+.scrolltopButton:hover {
+    background-color: #555;
+}
 
 @keyframes opacityAnimation
 {

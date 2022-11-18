@@ -16,6 +16,12 @@ $(function f()
     let $tabletsnav = $("#tabletsnav");
     let $wearablesnav = $("#wearablesnav");
     let $viewProductsButton = $("#viewAllProductsButton");
+    ///////////////////////////////////
+    let $mainHeader = $(".main-header");
+    let $goodsType = $("#goods-type");
+
+
+    ///////////////////////////////////
     let counter: number = 0;
 
     $searchingButton.on("click", () => 
@@ -78,12 +84,22 @@ $(function f()
         {
             $switcher.val("Dark theme");
             alert("Dark");
+
+            $("body").css("background-color", "rgb(47, 47, 47)");
+            $mainHeader.css("background-color", "rgb(47, 47, 47)");
+            $goodsType.css("color", "white");
+
             ++counter;
         }
         else
         {
             $switcher.val("Light theme");
             alert("Light");
+
+            $("body").css("background-color", "white");
+            $mainHeader.css("background-color", "white");
+            $goodsType.css("color", "black");
+
             --counter;
         }
     });

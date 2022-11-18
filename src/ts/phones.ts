@@ -8,6 +8,14 @@ $(function f()
     let $scrollTopBUtton = $(".scrolltopButton");
     let $searchBox = $("#search-box").val();
     let $searchingButton = $("#searching-button");
+    let $navtreep = $(".navtreep");
+    let $navtreel = $(".navtreel");
+    let $navtreet = $(".navtreet");
+    let $navtreew = $(".navtreew");
+    let $laptopsnav = $("#laptopsnav");
+    let $tabletsnav = $("#tabletsnav");
+    let $wearablesnav = $("#wearablesnav");
+    let $viewProductsButton = $("#viewAllProductsButton");
     let counter: number = 0;
 
     $searchingButton.on("click", () => 
@@ -22,11 +30,48 @@ $(function f()
             crossDomain: true,
         });
     });
-
+    ////////////////////////////////////////////////////////
     $currentCategory.on("mouseover", () =>
     {
-      //  alert("Hello");
+        $navtreep.slideDown();
     });
+
+    $tabletsnav.on("mouseover", () =>
+    {
+        $navtreet.slideDown();
+    });
+
+    $laptopsnav.on("mouseover", () =>
+    {
+        $navtreel.slideDown();
+    });
+
+    $wearablesnav.on("mouseover", () =>
+    {
+        $navtreew.slideDown();
+    });
+
+    $currentCategory.on("mouseleave", () =>
+    {
+        $navtreep.slideUp();
+    });
+
+    $tabletsnav.on("mouseleave", () =>
+    {
+        $navtreet.slideUp();
+    });
+
+    $laptopsnav.on("mouseleave", () =>
+    {
+        $navtreel.slideUp();
+    });
+
+    $wearablesnav.on("mouseleave", () =>
+    {
+        $navtreew.slideUp();
+    });
+
+    ///////////////////////////////////////////////////
 
     $switcher.on("click", () => {
         if (counter === 0)
@@ -73,7 +118,7 @@ $(function f()
         });
     });
     
-
-   
-
+    $viewProductsButton.on("click", () => {
+        
+    });
 });

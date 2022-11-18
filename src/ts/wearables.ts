@@ -8,6 +8,14 @@ $(function f()
     let $scrollTopBUtton = $(".scrolltopButton");
     let $searchBox = $("#search-box").val();
     let $searchingButton = $("#searching-button");
+    let $navtreep = $(".navtreep");
+    let $navtreel = $(".navtreel");
+    let $navtreet = $(".navtreet");
+    let $navtreew = $(".navtreew");
+    let $laptopsnav = $("#laptopsnav");
+    let $tabletsnav = $("#tabletsnav");
+    let $phonesnav = $("#phonesnav");
+    let $viewProductsButton = $("#viewAllProductsButton");
     let counter: number = 0;
 
     $searchingButton.on("click", () => 
@@ -22,6 +30,49 @@ $(function f()
             crossDomain: true,
         });
     });
+
+       ////////////////////////////////////////////////////////
+       $phonesnav.on("mouseover", () =>
+       {
+           $navtreep.slideDown();
+       });
+   
+       $tabletsnav.on("mouseover", () =>
+       {
+           $navtreet.slideDown();
+       });
+   
+       $laptopsnav.on("mouseover", () =>
+       {
+           $navtreel.slideDown();
+       });
+   
+       $currentCategory.on("mouseover", () =>
+       {
+           $navtreew.slideDown();
+       });
+   
+       $phonesnav.on("mouseleave", () =>
+       {
+           $navtreep.slideUp();
+       });
+   
+       $tabletsnav.on("mouseleave", () =>
+       {
+           $navtreet.slideUp();
+       });
+   
+       $laptopsnav.on("mouseleave", () =>
+       {
+           $navtreel.slideUp();
+       });
+   
+       $currentCategory.on("mouseleave", () =>
+       {
+           $navtreew.slideUp();
+       });
+   
+       ///////////////////////////////////////////////////
 
     $currentCategory.on("mouseover", () =>
     {

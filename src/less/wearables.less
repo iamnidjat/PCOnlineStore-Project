@@ -15,6 +15,14 @@ body{
     font-family: @FontFamily;
 }
 
+.text-decorations()
+{
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;   
+}
+
 .flexfunction()
 {
     display: flex;
@@ -32,12 +40,12 @@ body{
     background-color: @BGColor;
 }
 
-.text-decorations()
+.productscustfucntionn()
 {
-    text-decoration: underline;
-    text-decoration-color: inherit;
-    text-decoration-thickness: 1.5px;
-    text-underline-offset: 10px;   
+    border: 1px transparent;
+    height: 300px;
+    width: 300px;
+    background-color: @BGColor;
 }
 
 #nav
@@ -55,7 +63,7 @@ body{
     bottom: 0;
     background-color: @WhiteColor;
     height: 40px;
-}     
+}   
 
 .logo-home{
     width: 100px;
@@ -84,33 +92,25 @@ a{
     cursor: pointer;
 }
 
-.submit-button:hover{
-    background-color: black;
-}
-
 #searching-button{
     height: 30px;
     width: 50px;
     border: none;
     background-color: transparent;
-    margin-left: 5px;
+    margin-left: 15px;
     cursor: pointer;
     margin-bottom: -8px;
     background-image: url("https://www.hihonor.com/etc/designs/honor-site/assets/header-svg/5.svg");
     background-repeat: no-repeat;
 }
 
-#searching-button:hover{
-    background-color: lightgray;
-    opacity: .33;
-}
-
 #search-box{
     width: 300px;
     height: 25px;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 120px;
     border: 1px solid transparent;
+    background-color: transparent;
 }
 
 .languages, .categories{
@@ -118,7 +118,7 @@ a{
 }
 
 .languages{
-    margin-left: 20px;
+    padding: 10px;
 }
 
 ::placeholder{
@@ -128,11 +128,11 @@ a{
 .UK, .Russia, .Azerbaijan{
     width: 30px;
     height: 30px;
-    cursor: pointer;
 }
 
 .languages > img:hover{
     opacity: .5;
+    cursor: pointer;
 }
 
 #goods-type{
@@ -231,28 +231,37 @@ a{
     background-color: @BlackColor;
     color: @WhiteColor;
     border: none;
+    cursor: pointer;
+}
+
+.theme-switcher:hover{
+    opacity: .5
 }
 
 footer{
     background-color: @BlackColor;
     position: @AbsolutePosition;
-    bottom: -120px;
+    bottom: -220px;
     left: 0;
     right: 0;
-    height: 230px;
+    height: 300px;
     width: 100%;
 }
 
 footer > *
 {
     padding: 5px;
-    margin-left: 100px;
     font-size: 15px;
+    margin-left: 100px;
     color: @WhiteColor;
 }
 
 .customLink{
-    padding: 5px;
+    padding: -5px;
+}
+
+.customLink:hover{
+    opacity: .5;
 }
 
 .iconfont{
@@ -285,6 +294,232 @@ footer > *
 .scrolltopButton:hover {
     background-color: #555;
 }
+
+//////////////////////////////////////////
+
+.navtreep{
+    height: 400px;
+    width: 100%;
+    background-color: @WhiteColor;
+    border: 1px solid transparent;
+    z-index: 999;
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 0;
+    display: none;
+}
+
+#first-productn{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 200px;
+    .productscustfucntionn();
+}
+
+#second-productn{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 600px;
+    .productscustfucntionn();
+}
+
+#third-productn{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 1000px;
+    .productscustfucntionn();
+}
+
+.product-photon{
+    position: @AbsolutePosition;
+    height: 200px;
+    width: 220px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.product-titlen{
+    position: @AbsolutePosition;
+    top: 180px;
+    height: 50px;
+    width: 150px;
+    padding-left: 90px;
+    padding-top: 70px;
+    text-decoration: none;
+    color: @BlackColor;
+}
+
+.viewAllProductsButton{
+    position: @AbsolutePosition;
+    top: 350px;
+    left: 550px;
+    height: 30px;
+    width: 150px;
+    background-color: rgb(72, 215, 244);
+    color: @WhiteColor;
+    margin-left: 150px;
+    border: 1px solid transparent;
+}
+
+.viewAllProductsButton:hover{
+    background-color: @BlackColor;
+}
+
+/////////////////////////////////////////////////
+
+.navtreet{
+    height: 400px;
+    width: 100%;
+    background-color: @WhiteColor;
+    border: 1px solid transparent;
+    z-index: 999;
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 0;
+    display: none;
+}
+
+#first-productt{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 410px;
+    .productscustfucntionn();
+}
+
+#second-productt{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 830px;
+    .productscustfucntionn();
+}
+
+.product-photot{
+    position: @AbsolutePosition;
+    height: 200px;
+    width: 220px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.product-titlet{
+    position: @AbsolutePosition;
+    top: 180px;
+    height: 50px;
+    width: 150px;
+    padding-left: 90px;
+    padding-top: 70px;
+    text-decoration: none;
+    color: @BlackColor;
+}
+
+
+/////////////////////////////////////////////////
+.navtreel{
+    height: 400px;
+    width: 100%;
+    background-color: @WhiteColor;
+    border: 1px solid transparent;
+    z-index: 999;
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 0;
+    display: none;
+}
+
+#first-productl{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 200px;
+    .productscustfucntionn();
+}
+
+#second-productl{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 600px;
+    .productscustfucntionn();
+}
+
+#third-productl{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 1000px;
+    .productscustfucntionn();
+}
+
+.product-photol{
+    position: @AbsolutePosition;
+    height: 200px;
+    width: 220px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.product-titlel{
+    position: @AbsolutePosition;
+    top: 180px;
+    height: 50px;
+    width: 150px;
+    padding-left: 90px;
+    padding-top: 70px;
+    text-decoration: none;
+    color: @BlackColor;
+}
+
+
+/////////////////////////////////////////////////
+.navtreew{
+    height: 400px;
+    width: 100%;
+    background-color: @WhiteColor;
+    border: 1px solid transparent;
+    z-index: 999;
+    position: @AbsolutePosition;
+    top: 100px;
+    left: 0;
+    display: none;
+}
+
+#first-productw{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 200px;
+    .productscustfucntionn();
+}
+
+#second-productw{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 600px;
+    .productscustfucntionn();
+}
+
+#third-productw{
+    position: @AbsolutePosition;
+    top: 20px;
+    left: 1000px;
+    .productscustfucntionn();
+}
+
+.product-photow{
+    position: @AbsolutePosition;
+    height: 200px;
+    width: 220px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.product-titlew{
+    position: @AbsolutePosition;
+    top: 180px;
+    height: 50px;
+    width: 150px;
+    padding-left: 90px;
+    padding-top: 70px;
+    text-decoration: none;
+    color: @BlackColor;
+}
+/////////////////////////////////////////////////
 
 @keyframes opacityAnimation
   {

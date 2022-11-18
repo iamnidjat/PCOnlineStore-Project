@@ -8,6 +8,14 @@ $(function f()
     let $scrollTopBUtton = $(".scrolltopButton");
     let $searchBox = $("#search-box").val();
     let $searchingButton = $("#searching-button");
+    let $navtreep = $(".navtreep");
+    let $navtreel = $(".navtreel");
+    let $navtreet = $(".navtreet");
+    let $navtreew = $(".navtreew");
+    let $phonesnav = $("#phonesnav");
+    let $tabletsnav = $("#tabletsnav");
+    let $wearablesnav = $("#wearablesnav");
+    let $viewProductsButton = $("#viewAllProductsButton");
     let counter: number = 0;
 
     $searchingButton.on("click", () => 
@@ -22,6 +30,49 @@ $(function f()
             crossDomain: true,
         });
     });
+
+       ////////////////////////////////////////////////////////
+       $phonesnav.on("mouseover", () =>
+       {
+           $navtreep.slideDown();
+       });
+   
+       $tabletsnav.on("mouseover", () =>
+       {
+           $navtreet.slideDown();
+       });
+   
+       $currentCategory.on("mouseover", () =>
+       {
+           $navtreel.slideDown();
+       });
+   
+       $wearablesnav.on("mouseover", () =>
+       {
+           $navtreew.slideDown();
+       });
+   
+       $currentCategory.on("mouseleave", () =>
+       {
+           $navtreep.slideUp();
+       });
+   
+       $tabletsnav.on("mouseleave", () =>
+       {
+           $navtreet.slideUp();
+       });
+   
+       $phonesnav.on("mouseleave", () =>
+       {
+           $navtreel.slideUp();
+       });
+   
+       $wearablesnav.on("mouseleave", () =>
+       {
+           $navtreew.slideUp();
+       });
+   
+       ///////////////////////////////////////////////////
 
     $currentCategory.on("mouseover", () =>
     {

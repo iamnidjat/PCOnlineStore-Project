@@ -267,6 +267,231 @@ footer > * {
 .scrolltopButton:hover {
   background-color: #555;
 }
+.navtreep {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid transparent;
+  z-index: 999;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: none;
+}
+#first-productn {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#second-productn {
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#third-productn {
+  position: absolute;
+  top: 20px;
+  left: 1000px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+.product-photon {
+  position: absolute;
+  height: 200px;
+  width: 220px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.product-titlen {
+  position: absolute;
+  top: 180px;
+  height: 50px;
+  width: 150px;
+  padding-left: 90px;
+  padding-top: 70px;
+  text-decoration: none;
+  color: black;
+}
+.viewAllProductsButton {
+  position: absolute;
+  top: 350px;
+  left: 550px;
+  height: 30px;
+  width: 150px;
+  background-color: #48d7f4;
+  color: white;
+  margin-left: 150px;
+  border: 1px solid transparent;
+}
+.viewAllProductsButton:hover {
+  background-color: black;
+}
+.navtreet {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid transparent;
+  z-index: 999;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: none;
+}
+#first-productt {
+  position: absolute;
+  top: 20px;
+  left: 410px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#second-productt {
+  position: absolute;
+  top: 20px;
+  left: 830px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+.product-photot {
+  position: absolute;
+  height: 200px;
+  width: 220px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.product-titlet {
+  position: absolute;
+  top: 180px;
+  height: 50px;
+  width: 150px;
+  padding-left: 90px;
+  padding-top: 70px;
+  text-decoration: none;
+  color: black;
+}
+.navtreel {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid transparent;
+  z-index: 999;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: none;
+}
+#first-productl {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#second-productl {
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#third-productl {
+  position: absolute;
+  top: 20px;
+  left: 1000px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+.product-photol {
+  position: absolute;
+  height: 200px;
+  width: 220px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.product-titlel {
+  position: absolute;
+  top: 180px;
+  height: 50px;
+  width: 150px;
+  padding-left: 90px;
+  padding-top: 70px;
+  text-decoration: none;
+  color: black;
+}
+.navtreew {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid transparent;
+  z-index: 999;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: none;
+}
+#first-productw {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#second-productw {
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+#third-productw {
+  position: absolute;
+  top: 20px;
+  left: 1000px;
+  border: 1px transparent;
+  height: 300px;
+  width: 300px;
+  background-color: #f7f7f7;
+}
+.product-photow {
+  position: absolute;
+  height: 200px;
+  width: 220px;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+.product-titlew {
+  position: absolute;
+  top: 180px;
+  height: 50px;
+  width: 150px;
+  padding-left: 90px;
+  padding-top: 70px;
+  text-decoration: none;
+  color: black;
+}
 @keyframes opacityAnimation {
   from {
     opacity: 0;

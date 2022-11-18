@@ -5,6 +5,21 @@ $(function f()
     let $buyButton = $(".submit-button");
     let $switcher = $(".theme-switcher");
     let $scrollTopBUtton = $(".scrolltopButton");
+    let $searchBox = $("#search-box").val();
+    let $searchingButton = $("#searching-button");
+
+    $searchingButton.on("click", () => 
+    {
+        $.ajax({
+            url: ``,
+            success: (data) =>
+            {
+
+            },
+            method: "GET",
+            crossDomain: true,
+        });
+    });
 
     $switcher.on("click", () => {
         $switcher.val("Dark theme");

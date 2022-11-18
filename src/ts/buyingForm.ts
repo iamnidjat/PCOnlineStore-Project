@@ -13,6 +13,10 @@ $(function f()
     let $surnameBox = $("#surnameBox");
     let $lastnameBox = $("#lastnameBox");
     let $phoneBox = $("#phoneBox");
+    let $productTitle = $("#productLabel");
+    let $productPrice = $("#priceLabel");
+
+    let counter: number = 0;
 
     $searchingButton.on("click", () => 
     {
@@ -28,8 +32,18 @@ $(function f()
     });
 
     $switcher.on("click", () => {
-        $switcher.val("Dark theme");
-        alert("Hello");
+        if (counter === 0)
+        {
+            $switcher.val("Dark theme");
+            alert("Dark");
+            ++counter;
+        }
+        else
+        {
+            $switcher.val("Light theme");
+            alert("Light");
+            --counter;
+        }
     });
 
     $scrollTopBUtton.on("click", () => {
@@ -54,6 +68,7 @@ $(function f()
         $surnameBox.val('');
         $lastnameBox.val('');
         $phoneBox.val('');
+       // $productTitle.val(localStorage.getItem("FirstProduct"));
     });
 
     $buyingForm.on("submit", () => 
@@ -68,4 +83,6 @@ $(function f()
             crossDomain: true,
         });
     });
+
+
 });

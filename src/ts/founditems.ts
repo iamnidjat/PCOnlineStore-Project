@@ -8,6 +8,7 @@ $(function f()
     let $scrollTopBUtton = $(".scrolltopButton");
     let $searchBox = $("#search-box").val();
     let $searchingButton = $("#searching-button");
+    let counter: number = 0;
 
     $searchingButton.on("click", () => 
     {
@@ -28,8 +29,18 @@ $(function f()
     });
 
     $switcher.on("click", () => {
-        $switcher.val("Dark theme");
-        alert("Hello");
+        if (counter === 0)
+        {
+            $switcher.val("Dark theme");
+            alert("Dark");
+            ++counter;
+        }
+        else
+        {
+            $switcher.val("Light theme");
+            alert("Light");
+            --counter;
+        }
     });
 
     $scrollTopBUtton.on("click", () => {

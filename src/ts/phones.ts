@@ -77,6 +77,8 @@ $(function f()
         {
             $switcher.val("Dark theme");
 
+           // localStorage.setItem("bodyDarkColor", "rgb(47, 47, 47)");
+
             $("body").css("background-color", "rgb(47, 47, 47)");
             $mainHeader.css("background-color", "rgb(47, 47, 47)");
             $goodsType.css("color", "white");
@@ -98,6 +100,8 @@ $(function f()
             $purchasesnav.css("color", "white");
             $aboutusnav.css("color", "white");
             $searchBox.css("color", "white");
+
+            
 
             ++counter;
         }
@@ -126,6 +130,8 @@ $(function f()
             $purchasesnav.css("color", "rgb(85,26,169)");
             $aboutusnav.css("color", "rgb(85,26,169)");
             $searchBox.css("color", "black");
+
+          //  localStorage.setItem("bodyLightColor", "white");
 
             --counter;
         }
@@ -168,4 +174,12 @@ $(function f()
     $viewProductsButton.on("click", () => {
         
     });
+
+
+    // window.addEventListener("click",function(){
+    //     localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
+    // }); // 
+
+    // window.addEventListener("load",function(){
+    //     if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");});
 });

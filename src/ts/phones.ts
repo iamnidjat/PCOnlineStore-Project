@@ -15,6 +15,8 @@ $(function f()
     let $laptopsnav = $("#laptopsnav");
     let $tabletsnav = $("#tabletsnav");
     let $wearablesnav = $("#wearablesnav");
+    let $purchasesnav = $("#purchasesnav");
+    let $aboutusnav = $("#aboutusnav");
     let $viewProductsButton = $("#viewAllProductsButton");
     ///////////////////////////////////
     let $mainHeader = $(".main-header");
@@ -27,6 +29,9 @@ $(function f()
     let $sixthproduct = $("#sixth-product");
     let $seventhproduct = $("#seventh-product");
     let $eighthproduct = $("#eighth-product");
+    let $productTitle = $(".product-title");
+    let $productDesc = $(".product-desc");
+    let $productPrice = $(".product-price");
 
     ///////////////////////////////////
     let counter: number = 0;
@@ -84,6 +89,15 @@ $(function f()
             $sixthproduct.css("background-color", "rgb(146, 146, 146)");
             $seventhproduct.css("background-color", "rgb(146, 146, 146)");
             $eighthproduct.css("background-color", "rgb(146, 146, 146)");
+            $productTitle.css("color", "white");
+            $productPrice.css("color", "white");
+            $productDesc.css("color", "white");
+            $currentCategory.css("color", "white");
+            $tabletsnav.css("color", "white");
+            $laptopsnav.css("color", "white");
+            $wearablesnav.css("color", "white");
+            $purchasesnav.css("color", "white");
+            $aboutusnav.css("color", "white");
 
             ++counter;
         }
@@ -103,6 +117,16 @@ $(function f()
             $sixthproduct.css("background-color", "rgb(247, 247, 247)");
             $seventhproduct.css("background-color", "rgb(247, 247, 247)");
             $eighthproduct.css("background-color", "rgb(247, 247, 247)");
+            $productTitle.css("color", "black");
+            $productPrice.css("color", "black");
+            $productDesc.css("color", "black");
+            ////
+            $currentCategory.css("color", "black");
+            $tabletsnav.css("color", "black");
+            $laptopsnav.css("color", "black");
+            $wearablesnav.css("color", "black");
+            $purchasesnav.css("color", "black");
+            $aboutusnav.css("color", "black");
 
             --counter;
         }

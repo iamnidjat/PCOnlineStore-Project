@@ -5,7 +5,17 @@ $(function f()
     let $searchBox = $("#search-box").val();
     let $searchingButton = $("#searching-button");
     let $scrollTopBUtton = $(".scrolltopButton");
+    let $navtreep = $(".navtreep");
+    let $navtreel = $(".navtreel");
+    let $navtreet = $(".navtreet");
+    let $navtreew = $(".navtreew");
+    let $laptopsnav = $("#laptopsnav");
+    let $tabletsnav = $("#tabletsnav");
+    let $wearablesnav = $("#wearablesnav");
+    let $purchasesnav = $("#purchasesnav");
+    let $aboutusnav = $("#aboutusnav");
     let $switcher = $(".theme-switcher");
+    let $viewProductsButton = $("#viewAllProductsButton");
     let counter: number = 0;
 
     $searchingButton.on("click", () => 

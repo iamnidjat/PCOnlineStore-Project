@@ -15,6 +15,8 @@ $(function f()
     let $laptopsnav = $("#laptopsnav");
     let $tabletsnav = $("#tabletsnav");
     let $phonesnav = $("#phonesnav");
+    let $purchasesnav = $("#purchasesnav");
+    let $aboutusnav = $("#aboutusnav");
     let $viewProductsButton = $("#viewAllProductsButton");
     let counter: number = 0;
 
@@ -79,6 +81,10 @@ $(function f()
       if(scrolled > 100) 
       {
           $scrollTopBUtton.fadeIn();
+          $navtreep.slideUp();
+          $navtreel.slideUp();
+          $navtreet.slideUp();
+          $navtreew.slideUp();
       } 
       else 
       {

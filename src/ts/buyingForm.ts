@@ -16,6 +16,16 @@ $(function f()
     let $productTitle = $("#productLabel");
     let $productPrice = $("#priceLabel");
 
+    let $navtreep = $(".navtreep");
+    let $navtreel = $(".navtreel");
+    let $navtreet = $(".navtreet");
+    let $navtreew = $(".navtreew");
+    let $laptopsnav = $("#laptopsnav");
+    let $tabletsnav = $("#tabletsnav");
+    let $wearablesnav = $("#wearablesnav");
+    let $purchasesnav = $("#purchasesnav");
+    let $aboutusnav = $("#aboutusnav");
+
     let counter: number = 0;
 
     $searchingButton.on("click", () => 

@@ -15,6 +15,8 @@ $(function f()
     let $laptopsnav = $("#laptopsnav");
     let $phonesnav = $("#phonesnav");
     let $wearablesnav = $("#wearablesnav");
+    let $purchasesnav = $("#purchasesnav");
+    let $aboutusnav = $("#aboutusnav");
     let $viewProductsButton = $("#viewAllProductsButton");
     let counter: number = 0;
 

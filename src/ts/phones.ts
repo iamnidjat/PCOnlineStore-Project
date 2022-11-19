@@ -30,10 +30,6 @@ $(function f()
 
     ///////////////////////////////////
     let counter: number = 0;
-    let pcounter: number = 0;
-    let lcounter: number = 0;
-    let tcounter: number = 0;
-    let wcounter: number = 0;
 
     $searchingButton.on("click", () => 
     {
@@ -50,7 +46,6 @@ $(function f()
     ////////////////////////////////////////////////////////
     $currentCategory.on("mouseover", () =>
     {
-
         $navtreep.slideDown();
         
     });
@@ -69,26 +64,6 @@ $(function f()
     {
         $navtreew.slideDown();
     });
-
-    // $currentCategory.on("mouseleave", () =>
-    // {
-    //     $navtreep.slideUp();
-    // });
-
-    // $tabletsnav.on("mouseleave", () =>
-    // {
-    //     $navtreet.slideUp();
-    // });
-
-    // $laptopsnav.on("mouseleave", () =>
-    // {
-    //     $navtreel.slideUp();
-    // });
-
-    // $wearablesnav.on("mouseleave", () =>
-    // {
-    //     $navtreew.slideUp();
-    // });
 
     ///////////////////////////////////////////////////
 
@@ -143,6 +118,10 @@ $(function f()
       if(scrolled > 100) 
       {
           $scrollTopBUtton.fadeIn();
+          $navtreep.slideUp();
+          $navtreel.slideUp();
+          $navtreet.slideUp();
+          $navtreew.slideUp();
       } 
       else 
       {

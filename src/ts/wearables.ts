@@ -52,26 +52,6 @@ $(function f()
            $navtreew.slideDown();
        });
    
-       $phonesnav.on("mouseleave", () =>
-       {
-           $navtreep.slideUp();
-       });
-   
-       $tabletsnav.on("mouseleave", () =>
-       {
-           $navtreet.slideUp();
-       });
-   
-       $laptopsnav.on("mouseleave", () =>
-       {
-           $navtreel.slideUp();
-       });
-   
-       $currentCategory.on("mouseleave", () =>
-       {
-           $navtreew.slideUp();
-       });
-   
        ///////////////////////////////////////////////////
 
     $switcher.on("click", () => {

@@ -52,26 +52,6 @@ $(function f()
            $navtreew.slideDown();
        });
    
-       $currentCategory.on("mouseleave", () =>
-       {
-           $navtreel.slideUp();
-       });
-   
-       $tabletsnav.on("mouseleave", () =>
-       {
-           $navtreet.slideUp();
-       });
-   
-       $phonesnav.on("mouseleave", () =>
-       {
-           $navtreep.slideUp();
-       });
-   
-       $wearablesnav.on("mouseleave", () =>
-       {
-           $navtreew.slideUp();
-       });
-   
        ///////////////////////////////////////////////////
 
     $switcher.on("click", () => {
@@ -99,6 +79,10 @@ $(function f()
       if(scrolled > 100) 
       {
           $scrollTopBUtton.fadeIn();
+          $navtreep.slideUp();
+          $navtreel.slideUp();
+          $navtreet.slideUp();
+          $navtreew.slideUp();
       } 
       else 
       {

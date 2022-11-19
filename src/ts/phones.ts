@@ -6,7 +6,7 @@ $(function f()
     let $buyButton = $(".submit-button");
     let $switcher = $(".theme-switcher");
     let $scrollTopBUtton = $(".scrolltopButton");
-    let $searchBox = $("#search-box").val();
+    let $searchBox = $("#search-box");
     let $searchingButton = $("#searching-button");
     let $navtreep = $(".navtreep");
     let $navtreel = $(".navtreel");
@@ -76,7 +76,6 @@ $(function f()
         if (counter === 0)
         {
             $switcher.val("Dark theme");
-            alert("Dark");
 
             $("body").css("background-color", "rgb(47, 47, 47)");
             $mainHeader.css("background-color", "rgb(47, 47, 47)");
@@ -98,13 +97,13 @@ $(function f()
             $wearablesnav.css("color", "white");
             $purchasesnav.css("color", "white");
             $aboutusnav.css("color", "white");
+            $searchBox.css("color", "white");
 
             ++counter;
         }
         else
         {
             $switcher.val("Light theme");
-            alert("Light");
 
             $("body").css("background-color", "white");
             $mainHeader.css("background-color", "white");
@@ -120,13 +119,13 @@ $(function f()
             $productTitle.css("color", "black");
             $productPrice.css("color", "black");
             $productDesc.css("color", "black");
-            ////
-            $currentCategory.css("color", "black");
-            $tabletsnav.css("color", "black");
-            $laptopsnav.css("color", "black");
-            $wearablesnav.css("color", "black");
-            $purchasesnav.css("color", "black");
-            $aboutusnav.css("color", "black");
+            $currentCategory.css("color", "rgb(85,26,169)");
+            $tabletsnav.css("color", "rgb(85,26,169)");
+            $laptopsnav.css("color", "rgb(85,26,169)");
+            $wearablesnav.css("color", "rgb(85,26,169)");
+            $purchasesnav.css("color", "rgb(85,26,169)");
+            $aboutusnav.css("color", "rgb(85,26,169)");
+            $searchBox.css("color", "black");
 
             --counter;
         }

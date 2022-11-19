@@ -6,7 +6,7 @@ $(function f()
     let $buyButton = $(".submit-button");
     let $switcher = $(".theme-switcher");
     let $scrollTopBUtton = $(".scrolltopButton");
-    let $searchBox = $("#search-box").val();
+    let $searchBox = $("#search-box");
     let $searchingButton = $("#searching-button");
     let $navtreep = $(".navtreep");
     let $navtreel = $(".navtreel");
@@ -18,6 +18,21 @@ $(function f()
     let $purchasesnav = $("#purchasesnav");
     let $aboutusnav = $("#aboutusnav");
     let $viewProductsButton = $("#viewAllProductsButton");
+
+    let $mainHeader = $(".main-header");
+    let $goodsType = $("#goods-type");
+    let $firstproduct = $("#first-product");
+    let $secondproduct = $("#second-product");
+    let $thirdproduct = $("#third-product");
+    let $fourthproduct = $("#fourth-product");
+    let $fifthproduct = $("#fifth-product");
+    let $sixthproduct = $("#sixth-product");
+    let $seventhproduct = $("#seventh-product");
+    let $eighthproduct = $("#eighth-product");
+    let $productTitle = $(".product-title");
+    let $productDesc = $(".product-desc");
+    let $productPrice = $(".product-price");
+
     let counter: number = 0;
 
     $searchingButton.on("click", () => 
@@ -60,13 +75,57 @@ $(function f()
         if (counter === 0)
         {
             $switcher.val("Dark theme");
-            alert("Dark");
+            
+            $("body").css("background-color", "rgb(47, 47, 47)");
+            $mainHeader.css("background-color", "rgb(47, 47, 47)");
+            $goodsType.css("color", "white");
+            $firstproduct.css("background-color", "rgb(146, 146, 146)");
+            $secondproduct.css("background-color", "rgb(146, 146, 146)");
+            $thirdproduct.css("background-color", "rgb(146, 146, 146)");
+            $fourthproduct.css("background-color", "rgb(146, 146, 146)");
+            $fifthproduct.css("background-color", "rgb(146, 146, 146)");
+            $sixthproduct.css("background-color", "rgb(146, 146, 146)");
+            $seventhproduct.css("background-color", "rgb(146, 146, 146)");
+            $eighthproduct.css("background-color", "rgb(146, 146, 146)");
+            $productTitle.css("color", "white");
+            $productPrice.css("color", "white");
+            $productDesc.css("color", "white");
+            $currentCategory.css("color", "white");
+            $phonesnav.css("color", "white");
+            $laptopsnav.css("color", "white");
+            $wearablesnav.css("color", "white");
+            $purchasesnav.css("color", "white");
+            $aboutusnav.css("color", "white");
+            $searchBox.css("color", "white");
+
             ++counter;
         }
         else
         {
             $switcher.val("Light theme");
-            alert("Light");
+            
+            $("body").css("background-color", "white");
+            $mainHeader.css("background-color", "white");
+            $goodsType.css("color", "black");
+            $firstproduct.css("background-color", "rgb(247, 247, 247)");
+            $secondproduct.css("background-color", "rgb(247, 247, 247)");
+            $thirdproduct.css("background-color", "rgb(247, 247, 247)");
+            $fourthproduct.css("background-color", "rgb(247, 247, 247)");
+            $fifthproduct.css("background-color", "rgb(247, 247, 247)");
+            $sixthproduct.css("background-color", "rgb(247, 247, 247)");
+            $seventhproduct.css("background-color", "rgb(247, 247, 247)");
+            $eighthproduct.css("background-color", "rgb(247, 247, 247)");
+            $productTitle.css("color", "black");
+            $productPrice.css("color", "black");
+            $productDesc.css("color", "black");
+            $currentCategory.css("color", "rgb(85,26,169)");
+            $phonesnav.css("color", "rgb(85,26,169)");
+            $laptopsnav.css("color", "rgb(85,26,169)");
+            $wearablesnav.css("color", "rgb(85,26,169)");
+            $purchasesnav.css("color", "rgb(85,26,169)");
+            $aboutusnav.css("color", "rgb(85,26,169)");
+            $searchBox.css("color", "black");
+
             --counter;
         }
     });

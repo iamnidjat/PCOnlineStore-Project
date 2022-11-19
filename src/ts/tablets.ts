@@ -74,11 +74,6 @@ $(function f()
    
        ///////////////////////////////////////////////////
 
-    $currentCategory.on("mouseover", () =>
-    {
-      //  alert("Hello");
-    });
-
     $switcher.on("click", () => {
         if (counter === 0)
         {

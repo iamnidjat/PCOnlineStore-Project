@@ -54,7 +54,7 @@ $(function f()
    
        $currentCategory.on("mouseleave", () =>
        {
-           $navtreep.slideUp();
+           $navtreel.slideUp();
        });
    
        $tabletsnav.on("mouseleave", () =>
@@ -64,7 +64,7 @@ $(function f()
    
        $phonesnav.on("mouseleave", () =>
        {
-           $navtreel.slideUp();
+           $navtreep.slideUp();
        });
    
        $wearablesnav.on("mouseleave", () =>
@@ -73,11 +73,6 @@ $(function f()
        });
    
        ///////////////////////////////////////////////////
-
-    $currentCategory.on("mouseover", () =>
-    {
-      //  alert("Hello");
-    });
 
     $switcher.on("click", () => {
         if (counter === 0)

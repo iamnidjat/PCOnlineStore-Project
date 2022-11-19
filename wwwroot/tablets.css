@@ -145,6 +145,7 @@ a {
   color: white;
   margin-left: 210px;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 #second-product {
   position: absolute;
@@ -188,6 +189,9 @@ footer > * {
 }
 .partners {
   margin-left: -100px;
+}
+.partners:hover {
+  opacity: 0.5;
 }
 .scrolltopButton {
   display: none;
@@ -277,6 +281,7 @@ footer > * {
 }
 .viewAllProductsButton:hover {
   background-color: black;
+  cursor: pointer;
 }
 .navtreet {
   height: 400px;
@@ -375,7 +380,7 @@ footer > * {
   height: 50px;
   width: 150px;
   padding-left: 90px;
-  padding-top: 70px;
+  padding-top: 60px;
   text-decoration: none;
   color: black;
 }

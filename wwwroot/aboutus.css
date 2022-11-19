@@ -231,6 +231,9 @@ footer > * {
 .partners {
   margin-left: -100px;
 }
+.partners:hover {
+  opacity: 0.5;
+}
 .scrolltopButton {
   display: none;
   position: fixed;

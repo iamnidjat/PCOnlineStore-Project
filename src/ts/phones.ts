@@ -38,15 +38,36 @@ $(function f()
 
     $searchingButton.on("click", () => 
     {
-        $.ajax({
-            url: ``,
-            success: (data) =>
-            {
-
-            },
-            method: "GET",
-            crossDomain: true,
-        });
+        if ($searchBox.val() === "Phones" || $searchBox.val() === "phones" || $searchBox.val() === "phone" || $searchBox.val() === "Phone")
+        {
+            $.ajax({
+                url: 'phones.html',
+                success: (data) =>
+                {
+                    //
+                },
+                method: "GET",
+                crossDomain: true,
+            });
+        }
+        
+        else if ($searchBox.val() === "Main" || $searchBox.val() === "main" || $searchBox.val() === "home" || $searchBox.val() === "Home")
+        {
+           //window.location.href = 'index.html';
+            $.ajax({
+                url: '~/pages/index.html',
+                success: (data) =>
+                {
+                    window.location.href = 'index.html';
+                },
+                error: (data) =>
+                {
+                  alert("error!")  
+                },
+                method: "POST",
+                crossDomain: true,
+            });
+        }
     });
     ////////////////////////////////////////////////////////
     $currentCategory.on("mouseover", () =>

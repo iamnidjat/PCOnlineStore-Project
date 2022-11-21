@@ -148,6 +148,9 @@ a {
   border: 1px solid transparent;
   cursor: pointer;
 }
+.submit-button:hover {
+  background-color: black;
+}
 #second-product {
   position: absolute;
   top: 200px;

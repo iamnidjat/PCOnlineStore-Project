@@ -32,16 +32,35 @@ $(function f()
     let $productTitle = $(".product-title");
     let $productDesc = $(".product-desc");
     let $productPrice = $(".product-price");
+    //////////////////////////////////////////////
+    let $Uklang = $(".UK");
+    let $Ruslang = $(".Russia");
+    let $Azelang = $(".Azerbaijan");
+    let $aboutus = $("#aboutus");
+    let $contacts = $("#contacts");
+    let $address = $("#address");
+    let $partners = $("#partners");
+    let $myswitcher = $("#switcher");
 
     ///////////////////////////////////
     let counter: number = 0;
+
+   
+
+    $viewProductsButton.on('click', function() {
+        
+     });
+
+
+
+    //////////////////////////////////////////////////////////////////////
 
     $searchingButton.on("click", () => 
     {
         if ($searchBox.val() === "Phones" || $searchBox.val() === "phones" || $searchBox.val() === "phone" || $searchBox.val() === "Phone")
         {
             $.ajax({
-                url: 'phones.html',
+                url: '/phones.html',
                 success: (data) =>
                 {
                     //
@@ -55,7 +74,7 @@ $(function f()
         {
            //window.location.href = 'index.html';
             $.ajax({
-                url: '~/pages/index.html',
+                url: '/index.html',
                 success: (data) =>
                 {
                     window.location.href = 'index.html';
@@ -64,7 +83,25 @@ $(function f()
                 {
                   alert("error!")  
                 },
-                method: "POST",
+                method: "GET",
+                crossDomain: true,
+            });
+        }
+
+        else if ($searchBox.val() === "Tablets" || $searchBox.val() === "Tablet" || $searchBox.val() === "tablets" || $searchBox.val() === "tablet")
+        {
+           //window.location.href = 'index.html';
+            $.ajax({
+                url: '/tablets.html',
+                success: (data) =>
+                {
+                    window.location.href = 'tablets.html';
+                },
+                error: (data) =>
+                {
+                  alert("error!")  
+                },
+                method: "GET",
                 crossDomain: true,
             });
         }
@@ -179,13 +216,13 @@ $(function f()
       }
     });
 
-    $buyButton.on("submit", () => 
+    $buyButton.on("click", () => 
     {
         $.ajax({
-            url: ``,
+            url: `../pages/buyingForm.html`,
             success: (data) =>
             {
-
+                window.location.href = 'buyingForm.html';
             },
             method: "GET",
             crossDomain: true,
@@ -203,4 +240,296 @@ $(function f()
 
     // window.addEventListener("load",function(){
     //     if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");});
+
+    
+    $Uklang.on("click", () =>
+    {
+       var goodsType = $('#goods-type').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng["goods-type"]);
+        });
+
+        var currentCategory = $('#nav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.nav);
+        });
+
+        var laptops = $('#laptopsnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.laptopsnav);
+        });
+
+        var tablets = $('#tabletsnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.tabletsnav);
+        });
+
+        var tablets = $('#wearablesnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.wearablesnav);
+        });
+
+        var purchases = $('#purchasesnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.purchasesnav);
+        });
+
+        var aboutus = $('#aboutusnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.aboutusnav);
+        });
+
+        var buyButton = $('.submit-button').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.buyButton);
+        });
+
+        var aboutusf = $('#aboutus').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.aboutus);
+        });
+
+        var contacts = $('#contacts').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.contacts);
+        });
+
+        var address = $('#address').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.address);
+        });
+
+        var partners = $('#partners').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(eng.partners);
+        });
+
+       //  var myswitcher = $('#switcher').each(function() {
+       //     var el = $(this);
+       //     var key = (el.attr('caption'));
+       //     el.text(eng.myswitcher);
+       //  });
+    });
+
+    $Ruslang.on("click", () =>
+    {
+       var goodsType = $('#goods-type').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus["goods-type"]);
+        });
+
+        var currentCategory = $('#nav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.nav);
+        });
+
+        var laptops = $('#laptopsnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.laptopsnav);
+        });
+
+        var tablets = $('#tabletsnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.tabletsnav);
+        });
+
+        var tablets = $('#wearablesnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.wearablesnav);
+        });
+
+        var purchases = $('#purchasesnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.purchasesnav);
+        });
+
+        var aboutus = $('#aboutusnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.aboutusnav);
+        });
+
+        var buyButton = $('.submit-button').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.buyButton);
+        });
+
+        var aboutusf = $('#aboutus').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.aboutus);
+        });
+
+        var contacts = $('#contacts').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.contacts);
+        });
+
+        var address = $('#address').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.address);
+        });
+
+        var partners = $('#partners').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(rus.partners);
+        });
+
+       //  var myswitcher = $('#switcher').each(function() {
+       //     var el = $(this);
+       //     var key = (el.attr('caption'));
+       //     el.text(rus.myswitcher);
+       //  });
+    });
+
+    $Azelang.on("click", () =>
+    {
+       var goodsType = $('#goods-type').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze["goods-types"]);
+        });
+
+        var currentCategory = $('#nav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.nav);
+        });
+
+        var laptops = $('#laptopsnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.laptopsnav);
+        });
+
+        var tablets = $('#tabletsnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.tabletsnav);
+        });
+
+        var tablets = $('#wearablesnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.wearablesnav);
+        });
+
+        var purchases = $('#purchasesnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.purchasesnav);
+        });
+
+        var aboutus = $('#aboutusnav').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.aboutusnav);
+        });
+
+        var buyButton = $('.submit-button').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.buyButton);
+        });
+
+        var aboutusf = $('#aboutus').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.aboutus);
+        });
+
+        var contacts = $('#contacts').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.contacts);
+        });
+
+        var address = $('#address').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.address);
+        });
+
+        var partners = $('#partners').each(function() {
+           var el = $(this);
+           var key = (el.attr('caption'));
+           el.text(aze.partners);
+        });
+
+       //  var myswitcher = $('#switcher').each(function() {
+       //     var el = $(this);
+       //     var key = (el.attr('caption'));
+       //     el.text(aze.myswitcher);
+       //  });
+    });
+
+    var rus = {
+       'goods-type': "Мобильные телефоны",
+       nav: "Телефоны",
+       laptopsnav: "Ноутбуки",
+       tabletsnav: "Планшеты",
+       wearablesnav: "Часы",
+       purchasesnav: "Мои покупки",
+       aboutusnav: "Про нас",
+       buyButton: "Купить",
+       aboutus: "Про нас",
+       contacts: "Контакты:8800 7001677",
+       address: "Адрес: Россия, Москва",
+       partners: "Партнеры:",
+     //  myswitcher: "Переключатель тем: Светлая тема"
+     };
+
+     var eng = {
+       'goods-type': "Phones",
+       nav: "Phones",
+       laptopsnav: "Laptosp",
+       tabletsnav: "Tablets",
+       wearablesnav: "Wearables",
+       purchasesnav: "My purchases",
+       aboutusnav: "About us",
+       buyButton: "Buy",
+       aboutus: "About us",
+       contacts: "Contacts:8800 7001677",
+       address: "Address: Россия, Москва",
+       partners: "Partners: ",
+     //  myswitcher: "Theme switcher: Light theme"
+     };
+
+     var aze = {
+       'goods-types': "Mobil telefonlar",
+       nav: "Telefonlar",
+       laptopsnav: "Noutbuklar",
+       tabletsnav: "Plansetler",
+       wearablesnav: "Saatlar",
+       purchasesnav: "Alislarim",
+       aboutusnav: "Bizim haqqinda",
+       buyButton: "Almaq",
+       aboutus: "Bizim haqqinda",
+       contacts: "Kontaktlar:8800 7001677",
+       address: "Unvan: Россия, Москва",
+       partners: "Partnyorlar:",
+     //  myswitcher: "Movzu deyisimi: Aciq movzu"
+     };
 });

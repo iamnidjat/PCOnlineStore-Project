@@ -36,11 +36,11 @@ $(function f()
     let $Uklang = $(".UK");
     let $Ruslang = $(".Russia");
     let $Azelang = $(".Azerbaijan");
-    let $aboutus = $("#aboutus");
-    let $contacts = $("#contacts");
-    let $address = $("#address");
-    let $partners = $("#partners");
-    let $myswitcher = $("#switcher");
+   //  let $aboutus = $("#aboutus");
+   //  let $contacts = $("#contacts");
+   //  let $address = $("#address");
+   //  let $partners = $("#partners");
+   //  let $myswitcher = $("#switcher");
 
     ///////////////////////////////////
     let counter: number = 0;
@@ -234,12 +234,10 @@ $(function f()
     });
 
 
-    // window.addEventListener("click",function(){
-    //     localStorage.setItem("page",document.getElementsByTagName("html")[0].innerHTML);
-    // }); // 
 
-    // window.addEventListener("load",function(){
-    //     if(localStorage.getItem("page")) document.getElementsByTagName("html")[0].innerHTML = localStorage.getItem("page");});
+
+
+////////////////////////////////////////////////////////////////
 
     
     $Uklang.on("click", () =>
@@ -321,6 +319,9 @@ $(function f()
        //     var key = (el.attr('caption'));
        //     el.text(eng.myswitcher);
        //  });
+       localStorage.setItem("partners", JSON.stringify(partners));
+
+       
     });
 
     $Ruslang.on("click", () =>
@@ -495,7 +496,7 @@ $(function f()
        aboutusnav: "Про нас",
        buyButton: "Купить",
        aboutus: "Про нас",
-       contacts: "Контакты:8800 7001677",
+       contacts: "Контакты: 8800 7001677",
        address: "Адрес: Россия, Москва",
        partners: "Партнеры:",
      //  myswitcher: "Переключатель тем: Светлая тема"
@@ -511,7 +512,7 @@ $(function f()
        aboutusnav: "About us",
        buyButton: "Buy",
        aboutus: "About us",
-       contacts: "Contacts:8800 7001677",
+       contacts: "Contacts: 8800 7001677",
        address: "Address: Россия, Москва",
        partners: "Partners: ",
      //  myswitcher: "Theme switcher: Light theme"
@@ -527,7 +528,7 @@ $(function f()
        aboutusnav: "Bizim haqqinda",
        buyButton: "Almaq",
        aboutus: "Bizim haqqinda",
-       contacts: "Kontaktlar:8800 7001677",
+       contacts: "Kontaktlar: 8800 7001677",
        address: "Unvan: Россия, Москва",
        partners: "Partnyorlar:",
      //  myswitcher: "Movzu deyisimi: Aciq movzu"

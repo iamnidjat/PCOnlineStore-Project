@@ -319,7 +319,7 @@ $(function f()
        //     var key = (el.attr('caption'));
        //     el.text(eng.myswitcher);
        //  });
-       localStorage.setItem("partners", JSON.stringify(partners));
+       //localStorage.setItem("partners", JSON.stringify(partners));
 
        
     });

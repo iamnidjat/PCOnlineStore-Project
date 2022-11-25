@@ -25,10 +25,6 @@ $(function f()
     let $secondproduct = $("#second-product");
     let $thirdproduct = $("#third-product");
     let $fourthproduct = $("#fourth-product");
-    let $fifthproduct = $("#fifth-product");
-    let $sixthproduct = $("#sixth-product");
-    let $seventhproduct = $("#seventh-product");
-    let $eighthproduct = $("#eighth-product");
     let $productTitle = $(".product-title");
     let $productDesc = $(".product-desc");
     let $productPrice = $(".product-price");
@@ -84,10 +80,6 @@ $(function f()
           $secondproduct.css("background-color", "rgb(146, 146, 146)");
           $thirdproduct.css("background-color", "rgb(146, 146, 146)");
           $fourthproduct.css("background-color", "rgb(146, 146, 146)");
-          $fifthproduct.css("background-color", "rgb(146, 146, 146)");
-          $sixthproduct.css("background-color", "rgb(146, 146, 146)");
-          $seventhproduct.css("background-color", "rgb(146, 146, 146)");
-          $eighthproduct.css("background-color", "rgb(146, 146, 146)");
           $productTitle.css("color", "white");
           $productPrice.css("color", "white");
           $productDesc.css("color", "white");
@@ -97,7 +89,6 @@ $(function f()
           $phonesnav.css("color", "white");
           $purchasesnav.css("color", "white");
           $aboutusnav.css("color", "white");
-          $searchBox.css("color", "white");
 
           ++counter;
       }
@@ -112,10 +103,6 @@ $(function f()
           $secondproduct.css("background-color", "rgb(247, 247, 247)");
           $thirdproduct.css("background-color", "rgb(247, 247, 247)");
           $fourthproduct.css("background-color", "rgb(247, 247, 247)");
-          $fifthproduct.css("background-color", "rgb(247, 247, 247)");
-          $sixthproduct.css("background-color", "rgb(247, 247, 247)");
-          $seventhproduct.css("background-color", "rgb(247, 247, 247)");
-          $eighthproduct.css("background-color", "rgb(247, 247, 247)");
           $productTitle.css("color", "black");
           $productPrice.css("color", "black");
           $productDesc.css("color", "black");
@@ -125,7 +112,6 @@ $(function f()
           $phonesnav.css("color", "rgb(85,26,169)");
           $purchasesnav.css("color", "rgb(85,26,169)");
           $aboutusnav.css("color", "rgb(85,26,169)");
-          $searchBox.css("color", "black");
 
           --counter;
       }
@@ -151,4 +137,53 @@ $(function f()
           $scrollTopBUtton.fadeOut();
       }
   });
+
+  //////////////////////////////////////////////////
+  var rus = {
+    'goods-type': "Мобильные телефоны",
+    nav: "Телефоны",
+    laptopsnav: "Ноутбуки",
+    tabletsnav: "Планшеты",
+    wearablesnav: "Часы",
+    purchasesnav: "Мои покупки",
+    aboutusnav: "Про нас",
+    buyButton: "Купить",
+    aboutus: "Про нас",
+    contacts: "Контакты: 8800 7001677",
+    address: "Адрес: Россия, Москва",
+    partners: "Партнеры:",
+  //  myswitcher: "Переключатель тем: Светлая тема"
+  };
+
+  var eng = {
+    'goods-type': "Phones",
+    nav: "Phones",
+    laptopsnav: "Laptosp",
+    tabletsnav: "Tablets",
+    wearablesnav: "Wearables",
+    purchasesnav: "My purchases",
+    aboutusnav: "About us",
+    buyButton: "Buy",
+    aboutus: "About us",
+    contacts: "Contacts: 8800 7001677",
+    address: "Address: Россия, Москва",
+    partners: "Partners: ",
+  //  myswitcher: "Theme switcher: Light theme"
+  };
+
+  var aze = {
+    'goods-types': "Mobil telefonlar",
+    nav: "Telefonlar",
+    laptopsnav: "Noutbuklar",
+    tabletsnav: "Plansetler",
+    wearablesnav: "Saatlar",
+    purchasesnav: "Alislarim",
+    aboutusnav: "Bizim haqqinda",
+    buyButton: "Almaq",
+    aboutus: "Bizim haqqinda",
+    contacts: "Kontaktlar: 8800 7001677",
+    address: "Unvan: Россия, Москва",
+    partners: "Partnyorlar:",
+  //  myswitcher: "Movzu deyisimi: Aciq movzu"
+  };
 });

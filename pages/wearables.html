@@ -14,32 +14,32 @@
                 <img class="logo" src="https://www.hihonor.com/content/dam/honor/common/logo/honor-logo-black.svg" title="HONOR" alt="HONOR">
             </a>
             <div class="categories">
-                <a href="phones.html" id="phonesnav">
+                <a href="phones.html" id="phonesnav" caption="phonesnav">
                     <span>
                         Phones
                     </span>
                 </a>
-                <a href="laptops.html" id="laptopsnav">
+                <a href="laptops.html" id="laptopsnav" caption="laptopsnav">
                     <span>
                         Laptops
                     </span>
                 </a>
-                <a href="tablets.html" id="tabletsnav">
+                <a href="tablets.html" id="tabletsnav" caption="tabletsnav">
                     <span>
                         Tablets
                     </span>
                 </a>
-                <a href="wearables.html" id="nav">
+                <a href="wearables.html" id="nav" caption="nav">
                     <span>
                         Wearables
                     </span>
                 </a>
-                <a href="purchases.html" id="purchasesnav">
+                <a href="purchases.html" id="purchasesnav" caption="purchasesnav">
                     <span>
                         My Purchases
                     </span>
                 </a>
-                <a href="aboutus.html" id="aboutusnav">
+                <a href="aboutus.html" id="aboutusnav" caption="aboutusnav">
                     <span>
                         About Us
                     </span>
@@ -48,6 +48,21 @@
             <input type="text" name="search-box" id="search-box" placeholder="Input category...">
             <input type="button" name="searching-button" id="searching-button">
         </div>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+            <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="phones.html">Phones</a></li>
+              <li><a class="menu__item" href="laptops.html">Laptops</a></li>
+              <li><a class="menu__item" href="tablets.html">Tablets</a></li>
+              <li><a class="menu__item" href="wearables.html">Wearables</a></li>
+              <li><a class="menu__item" href="purchases.html">My purchases</a></li>
+              <li><a class="menu__item" href="aboutus.html">About Us</a></li>
+            </ul>
+          </div>
     </header>
 
     <main>
@@ -193,7 +208,7 @@
                     1300$
                 </span>
                 <a>
-                    <input type="submit" value="Buy" class="submit-button">
+                    <input type="submit" value="Buy" class="submit-button" caption="submit-button">
                 </a>
             </div>
     
@@ -209,7 +224,7 @@
                     1200$
                 </span>
                 <a>
-                    <input type="submit" value="Buy" class="submit-button">
+                    <input type="submit" value="Buy" class="submit-button" caption="submit-button">
                 </a>
             </div>
 
@@ -225,7 +240,7 @@
                     1100$
                 </span>
                 <a>
-                    <input type="submit" value="Buy" class="submit-button">
+                    <input type="submit" value="Buy" class="submit-button" caption="submit-button">
                 </a>
             </div>
 
@@ -241,7 +256,7 @@
                     1000$
                 </span>
                 <a>
-                    <input type="submit" value="Buy" class="submit-button">
+                    <input type="submit" value="Buy" class="submit-button" caption="submit-button">
                 </a>
             </div>
 
@@ -249,13 +264,13 @@
     </main>
 
     <footer>
-        <div>
+        <div id="aboutus" caption="aboutus">
             <a href="aboutus.html">About Us</a>
         </div>
-        <div>Contacts: 8800 7001677</div>
+        <div id="contacts" caption="contacts">Contacts: 8800 7001677</div>
         <div>Mail: ru.support@hihonor.com</div>
-        <div>Address: Russia, Moscow</div>
-        <span>Partners:</span>
+        <div id="address" caption="address">Address: Russia, Moscow</div>
+        <span id="partners" caption="partners">Partners:</span>
         <a href="https://www.microsoft.com/en-us/">
             <span class="partners">
                 Microsoft,

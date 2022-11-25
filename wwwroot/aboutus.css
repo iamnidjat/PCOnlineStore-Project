@@ -262,3 +262,6 @@ footer > * {
     opacity: 1;
   }
 }
+.hamburger-menu {
+  visibility: hidden;
+}

@@ -15,6 +15,12 @@ $(function f()
     let $phoneBox = $("#phoneBox");
     let $productTitle = $("#productLabel");
     let $productPrice = $("#priceLabel");
+    let $mainHeader = $(".main-header");
+    let $ad = $("#ad");
+    let $namelabel = $("#nameLabel");
+    let $surnamelabel = $("#surnameLabel");
+    let $lastnamelabel = $("#lastnameLabel");
+    let $phonelabel = $("#phoneLabel");
 
     let $navtreep = $(".navtreep");
     let $navtreel = $(".navtreel");
@@ -25,6 +31,7 @@ $(function f()
     let $wearablesnav = $("#wearablesnav");
     let $purchasesnav = $("#purchasesnav");
     let $aboutusnav = $("#aboutusnav");
+    let $phonesnav = $("#phonesnav");
 
     let counter: number = 0;
 
@@ -45,13 +52,45 @@ $(function f()
         if (counter === 0)
         {
             $switcher.val("Dark theme");
-            alert("Dark");
+            
+            $("body").css("background-color", "rgb(47, 47, 47)");
+            $mainHeader.css("background-color", "rgb(47, 47, 47)");
+            $productTitle.css("color", "white");
+            $productPrice.css("color", "white");
+            $namelabel.css("color", "white");
+            $surnamelabel.css("color", "white");
+            $lastnamelabel.css("color", "white");
+            $phonelabel.css("color", "white");
+            $tabletsnav.css("color", "white");
+            $laptopsnav.css("color", "white");
+            $phonesnav.css("color", "white");
+            $wearablesnav.css("color", "white");
+            $purchasesnav.css("color", "white");
+            $aboutusnav.css("color", "white");
+            $ad.css("color", "white");
+
             ++counter;
         }
         else
         {
             $switcher.val("Light theme");
-            alert("Light");
+            
+            $("body").css("background-color", "white");
+            $mainHeader.css("background-color", "white");
+            $productTitle.css("color", "black");
+            $productPrice.css("color", "black");
+            $namelabel.css("color", "black");
+            $surnamelabel.css("color", "black");
+            $lastnamelabel.css("color", "black");
+            $phonelabel.css("color", "black");
+            $tabletsnav.css("color", "rgb(85,26,169)");
+            $laptopsnav.css("color", "rgb(85,26,169)");
+            $phonesnav.css("color", "rgb(85,26,169)");
+            $wearablesnav.css("color", "rgb(85,26,169)");
+            $purchasesnav.css("color", "rgb(85,26,169)");
+            $aboutusnav.css("color", "rgb(85,26,169)");
+            $ad.css("color", "black");
+
             --counter;
         }
     });

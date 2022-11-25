@@ -75,7 +75,6 @@ $(function f()
         if (counter === 0)
         {
             $switcher.val("Dark theme");
-            
 
             $("body").css("background-color", "rgb(47, 47, 47)");
             $mainHeader.css("background-color", "rgb(47, 47, 47)");
@@ -102,9 +101,9 @@ $(function f()
             ++counter;
         }
         else
-        {
+        {          
             $switcher.val("Light theme");
-            
+
             $("body").css("background-color", "white");
             $mainHeader.css("background-color", "white");
             $goodsType.css("color", "black");

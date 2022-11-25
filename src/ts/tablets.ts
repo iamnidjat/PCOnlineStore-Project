@@ -23,12 +23,6 @@ $(function f()
     let $goodsType = $("#goods-type");
     let $firstproduct = $("#first-product");
     let $secondproduct = $("#second-product");
-    let $thirdproduct = $("#third-product");
-    let $fourthproduct = $("#fourth-product");
-    let $fifthproduct = $("#fifth-product");
-    let $sixthproduct = $("#sixth-product");
-    let $seventhproduct = $("#seventh-product");
-    let $eighthproduct = $("#eighth-product");
     let $productTitle = $(".product-title");
     let $productDesc = $(".product-desc");
     let $productPrice = $(".product-price");
@@ -81,12 +75,6 @@ $(function f()
             $goodsType.css("color", "white");
             $firstproduct.css("background-color", "rgb(146, 146, 146)");
             $secondproduct.css("background-color", "rgb(146, 146, 146)");
-            $thirdproduct.css("background-color", "rgb(146, 146, 146)");
-            $fourthproduct.css("background-color", "rgb(146, 146, 146)");
-            $fifthproduct.css("background-color", "rgb(146, 146, 146)");
-            $sixthproduct.css("background-color", "rgb(146, 146, 146)");
-            $seventhproduct.css("background-color", "rgb(146, 146, 146)");
-            $eighthproduct.css("background-color", "rgb(146, 146, 146)");
             $productTitle.css("color", "white");
             $productPrice.css("color", "white");
             $productDesc.css("color", "white");
@@ -96,7 +84,6 @@ $(function f()
             $wearablesnav.css("color", "white");
             $purchasesnav.css("color", "white");
             $aboutusnav.css("color", "white");
-            $searchBox.css("color", "white");
 
             ++counter;
         }
@@ -109,12 +96,6 @@ $(function f()
             $goodsType.css("color", "black");
             $firstproduct.css("background-color", "rgb(247, 247, 247)");
             $secondproduct.css("background-color", "rgb(247, 247, 247)");
-            $thirdproduct.css("background-color", "rgb(247, 247, 247)");
-            $fourthproduct.css("background-color", "rgb(247, 247, 247)");
-            $fifthproduct.css("background-color", "rgb(247, 247, 247)");
-            $sixthproduct.css("background-color", "rgb(247, 247, 247)");
-            $seventhproduct.css("background-color", "rgb(247, 247, 247)");
-            $eighthproduct.css("background-color", "rgb(247, 247, 247)");
             $productTitle.css("color", "black");
             $productPrice.css("color", "black");
             $productDesc.css("color", "black");
@@ -124,7 +105,6 @@ $(function f()
             $wearablesnav.css("color", "rgb(85,26,169)");
             $purchasesnav.css("color", "rgb(85,26,169)");
             $aboutusnav.css("color", "rgb(85,26,169)");
-            $searchBox.css("color", "black");
 
             --counter;
         }

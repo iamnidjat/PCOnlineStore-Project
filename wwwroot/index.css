@@ -1309,6 +1309,24 @@ footer > * {
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1300px) {
+  #searching-button {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+  }
+  #search-box {
+    position: absolute;
+    top: 70px;
+    left: -80px;
+  }
 }
 @media screen and (min-width: 1300px) and (max-width: 1415px) {
+  #searching-button {
+    position: absolute;
+    margin-left: 350px;
+  }
+  #search-box {
+    position: absolute;
+    margin-left: 30px;
+  }
 }

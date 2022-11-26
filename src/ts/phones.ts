@@ -73,7 +73,7 @@ $(function f()
         else if ($searchBox.val() === "Main" || $searchBox.val() === "main" || $searchBox.val() === "home" || $searchBox.val() === "Home")
         {
            //window.location.href = 'index.html';
-            $.ajax({
+            $.get({
                 url: '/index.html',
                 success: (data) =>
                 {

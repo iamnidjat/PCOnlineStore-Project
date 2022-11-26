@@ -117,7 +117,7 @@ $(function f()
         $surnameBox.val('');
         $lastnameBox.val('');
         $phoneBox.val('');
-       // $productTitle.val(localStorage.getItem("FirstProduct"));
+       // $productTitle.text('');
     });
 
     $buyingForm.on("submit", () => 

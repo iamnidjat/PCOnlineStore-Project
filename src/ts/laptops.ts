@@ -163,4 +163,13 @@ $(function f()
           crossDomain: true,
       });
   });
+
+    localStorage.setItem("firstProductL", "HONOR MagicBook X16");
+    localStorage.setItem("secondProductL", "HONOR MagicBook 14 AMD 2021");
+    localStorage.setItem("thirdProductL", "HONOR MagicBook 14 2022 RTX");
+    localStorage.setItem("fourthProductL", "HONOR MagicBook 14 2022");
+    localStorage.setItem("fifthProductL", "HONOR MagicBook X 15 2022");
+    localStorage.setItem("sixthProductL", "HONOR MagicBook X 14 2022Performa");
+    localStorage.setItem("seventhProductL", "HONOR MagicBook 16");
+    localStorage.setItem("eighthProductL", "HONOR MagicBook View 14");
 });

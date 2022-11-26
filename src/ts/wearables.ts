@@ -186,4 +186,9 @@ $(function f()
     partners: "Partnyorlar:",
   //  myswitcher: "Movzu deyisimi: Aciq movzu"
   };
+
+  localStorage.setItem("firstProductW", "HONOR Watch GS 3");
+  localStorage.setItem("secondProductW", "HONOR Band 6");
+  localStorage.setItem("thirdProductW", "HONOR Watch GS Pro");
+  localStorage.setItem("fourthProductW", "HONOR Watch ES");
 });

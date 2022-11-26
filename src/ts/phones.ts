@@ -72,8 +72,7 @@ $(function f()
         
         else if ($searchBox.val() === "Main" || $searchBox.val() === "main" || $searchBox.val() === "home" || $searchBox.val() === "Home")
         {
-           //window.location.href = 'index.html';
-            $.get({
+            $.ajax({
                 url: '/index.html',
                 success: (data) =>
                 {
@@ -129,6 +128,9 @@ $(function f()
     });
 
     ///////////////////////////////////////////////////
+    localStorage.setItem("bodyDarkColor", "rgb(47, 47, 47)");
+
+    let a = localStorage.getItem("bodyDarkColor");
 
     $switcher.on("click", () => {
         if (counter === 0)
@@ -138,6 +140,7 @@ $(function f()
            // localStorage.setItem("bodyDarkColor", "rgb(47, 47, 47)");
 
             $("body").css("background-color", "rgb(47, 47, 47)");
+            //$("body").css("background-color", a);
             $mainHeader.css("background-color", "rgb(47, 47, 47)");
             $goodsType.css("color", "white");
             $firstproduct.css("background-color", "rgb(146, 146, 146)");
@@ -158,6 +161,7 @@ $(function f()
             $purchasesnav.css("color", "white");
             $aboutusnav.css("color", "white");
             $searchBox.css("color", "white");
+
 
             
 
@@ -533,4 +537,20 @@ $(function f()
        partners: "Partnyorlar:",
      //  myswitcher: "Movzu deyisimi: Aciq movzu"
      };
+
+     localStorage.setItem("aze", JSON.stringify(aze));
+     localStorage.setItem("rus", JSON.stringify(rus));
+     localStorage.setItem("eng", JSON.stringify(eng));
+
+
+     //let b = localStorage.getItem("rus");
+
+     localStorage.setItem("firstProductP", "HONOR 70 Pro");
+     localStorage.setItem("secondProductP", "HONOR X9");
+     localStorage.setItem("thirdProductP", "HONOR 70 Pro+");
+     localStorage.setItem("fourthProductP", "HONOR 70");
+     localStorage.setItem("fifthProductP", "HONOR X8 5G");
+     localStorage.setItem("sixthProductP", "HONOR Magic4 Pro");
+     localStorage.setItem("seventhProductP", "HONOR Magic4 Ultimate");
+     localStorage.setItem("eighthProductP", "HONOR X9 5G");
 });

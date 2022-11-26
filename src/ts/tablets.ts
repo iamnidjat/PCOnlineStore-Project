@@ -143,5 +143,6 @@ $(function f()
 //   let $product1Title = $("#product1Title").val();
 
 //   localStorage.setItem("FirstProduct", JSON.stringify($product1Title));
-
+    localStorage.setItem("firstProductT", "HONOR Pad X8 Lite");
+    localStorage.setItem("secondProductT", "HONOR Pad 8");
 });

@@ -116,7 +116,8 @@ $(function f()
         $nameBox.val('');
         $surnameBox.val('');
         $lastnameBox.val('');
-        $phoneBox.val('');
+        //$phoneBox.val('');
+        $lastnameBox.val(sessionStorage.getItem("firtsProductW"));
        // $productTitle.text('');
     });
 

@@ -543,8 +543,6 @@ $(function f()
      localStorage.setItem("eng", JSON.stringify(eng));
 
 
-     //let b = localStorage.getItem("rus");
-
      localStorage.setItem("firstProductP", "HONOR 70 Pro");
      localStorage.setItem("secondProductP", "HONOR X9");
      localStorage.setItem("thirdProductP", "HONOR 70 Pro+");

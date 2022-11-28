@@ -187,8 +187,23 @@ $(function f()
   //  myswitcher: "Movzu deyisimi: Aciq movzu"
   };
 
-  sessionStorage.setItem("firstProductW", "HONOR Watch GS 3");
+  localStorage.setItem("firstProductW", "HONOR Watch GS 3");
   localStorage.setItem("secondProductW", "HONOR Band 6");
   localStorage.setItem("thirdProductW", "HONOR Watch GS Pro");
   localStorage.setItem("fourthProductW", "HONOR Watch ES");
+
+  localStorage.setItem("MainHeaderWearables", JSON.stringify($mainHeader));
+  localStorage.setItem("FirstProductWearables", JSON.stringify($firstproduct));
+  localStorage.setItem("SecondProductWearables", JSON.stringify($secondproduct));
+  localStorage.setItem("ThirdProductProductWearables", JSON.stringify($thirdproduct));
+  localStorage.setItem("FourthProductWearables", JSON.stringify($fourthproduct));
+  localStorage.setItem("ProductTitleWearables", JSON.stringify($productTitle));
+  localStorage.setItem("ProductPriceWearables", JSON.stringify($productPrice));
+  localStorage.setItem("ProductDescWearables", JSON.stringify($productDesc));
+  localStorage.setItem("CurrentCategoryWearables", JSON.stringify($currentCategory));
+  localStorage.setItem("PhonesNavWearables", JSON.stringify($phonesnav));
+  localStorage.setItem("LaptopsNavWearables", JSON.stringify($laptopsnav));
+  localStorage.setItem("TabletsNavWearables", JSON.stringify($tabletsnav));
+  localStorage.setItem("PurchasesNavWearables", JSON.stringify($purchasesnav));
+  localStorage.setItem("AboutUsNavWearables", JSON.stringify($aboutusnav));
 });

@@ -140,9 +140,19 @@ $(function f()
       });
   });
 
-//   let $product1Title = $("#product1Title").val();
-
-//   localStorage.setItem("FirstProduct", JSON.stringify($product1Title));
     localStorage.setItem("firstProductT", "HONOR Pad X8 Lite");
     localStorage.setItem("secondProductT", "HONOR Pad 8");
+
+    localStorage.setItem("MainHeaderTablets", JSON.stringify($mainHeader));
+    localStorage.setItem("FirstProductTablets", JSON.stringify($firstproduct));
+    localStorage.setItem("SecondProductTablets", JSON.stringify($secondproduct));
+    localStorage.setItem("ProductTitleTablets", JSON.stringify($productTitle));
+    localStorage.setItem("ProductPriceTablets", JSON.stringify($productPrice));
+    localStorage.setItem("ProductDescTablets", JSON.stringify($productDesc));
+    localStorage.setItem("CurrentCategoryTablets", JSON.stringify($currentCategory));
+    localStorage.setItem("PhonesNavTablets", JSON.stringify($phonesnav));
+    localStorage.setItem("LaptopsNavTablets", JSON.stringify($laptopsnav));
+    localStorage.setItem("WearablesNavTablets", JSON.stringify($wearablesnav));
+    localStorage.setItem("PurchasesNavTablets", JSON.stringify($purchasesnav));
+    localStorage.setItem("AboutUsNavTablets", JSON.stringify($aboutusnav));
 });

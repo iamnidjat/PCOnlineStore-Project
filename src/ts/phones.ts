@@ -73,14 +73,14 @@ $(function f()
         else if ($searchBox.val() === "Main" || $searchBox.val() === "main" || $searchBox.val() === "home" || $searchBox.val() === "Home")
         {
             $.ajax({
-                url: '/index.html',
+                url: 'http:///index.html',
                 success: (data) =>
                 {
                     window.location.href = 'index.html';
                 },
                 error: (data) =>
                 {
-                  alert("error!")  
+                  alert("blablabla!")  
                 },
                 method: "GET",
                 crossDomain: true,

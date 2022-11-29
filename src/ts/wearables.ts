@@ -74,7 +74,8 @@ $(function f()
           
 
           $("body").css("background-color", "rgb(47, 47, 47)");
-          $mainHeader.css("background-color", "rgb(47, 47, 47)");
+         // $mainHeader.css("background-color", "rgb(47, 47, 47)");
+          $mainHeader.css("background-color", localStorage.getItem("rgb47"));
           $goodsType.css("color", "white");
           $firstproduct.css("background-color", "rgb(146, 146, 146)");
           $secondproduct.css("background-color", "rgb(146, 146, 146)");
@@ -89,6 +90,8 @@ $(function f()
           $phonesnav.css("color", "white");
           $purchasesnav.css("color", "white");
           $aboutusnav.css("color", "white");
+
+         // JSON.parse(localStorage.getItem("MainHeaderWearables")).css("background-color", "rgb(47, 47, 47)");
 
           ++counter;
       }
@@ -206,4 +209,8 @@ $(function f()
   localStorage.setItem("TabletsNavWearables", JSON.stringify($tabletsnav));
   localStorage.setItem("PurchasesNavWearables", JSON.stringify($purchasesnav));
   localStorage.setItem("AboutUsNavWearables", JSON.stringify($aboutusnav));
+
+
+
+  localStorage.setItem("rgb47", "rgb(47,47,47)");
 });

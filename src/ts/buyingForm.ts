@@ -113,12 +113,14 @@ $(function f()
     });
 
     $resetButton.on("click", () => {
+        let a:string = localStorage.getItem("firtsProductW");
         $nameBox.val('');
         $surnameBox.val('');
         $lastnameBox.val('');
-        //$phoneBox.val('');
-        $lastnameBox.val(sessionStorage.getItem("firtsProductW"));
-       // $productTitle.text('');
+        $phoneBox.val('');
+        $productTitle.text(localStorage.getItem("firtsProductW"));
+
+        alert(localStorage.getItem("firtsProductW"));
     });
 
     $buyingForm.on("submit", () => 

@@ -125,6 +125,7 @@ a {
   width: 150px;
   font-size: 20px;
   top: 400px;
+  width: 400px;
 }
 #priceLabel {
   position: absolute;
@@ -132,6 +133,7 @@ a {
   width: 150px;
   font-size: 20px;
   top: 450px;
+  width: 400px;
 }
 #nameBox {
   position: absolute;

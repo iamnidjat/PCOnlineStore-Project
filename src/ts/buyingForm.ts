@@ -102,7 +102,7 @@ $(function f()
     $(window).on("scroll", () => {
       let scrolled = $(window).scrollTop();
   
-      if(scrolled > 100) 
+      if (scrolled > 100) 
       {
           $scrollTopBUtton.fadeIn();
       } 

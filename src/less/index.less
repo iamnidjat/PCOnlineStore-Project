@@ -346,7 +346,7 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc1();
 }
 
 
@@ -363,7 +363,7 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc1();
 }
 
 
@@ -380,13 +380,15 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc1();
 }
 
 
 
 @media screen and (min-width: 650px) and (max-width: 700px)
 {
+    
+
     .menu__btn {
         display: flex;
         align-items: center;
@@ -398,7 +400,7 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc2();
 }
 
 
@@ -415,7 +417,7 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc2();
 }
 
 
@@ -432,7 +434,7 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc3();
 }
 
 @media screen and (min-width: 900px) and (max-width: 950px)
@@ -448,13 +450,73 @@ footer > *
         cursor: pointer;
         z-index: 1;
     }
-    .mediascreenfunc();
+    .mediascreenfunc3();
 }
 
 
 
 @media screen and (min-width: 950px) and (max-width: 1300px)
-{
+{    
+    .Honor70AD{
+        position: @AbsolutePosition;
+        top: 80px;
+        left: 400px;
+        width: 300px;
+    }
+
+    .HONOR70Photo{
+        position: @RelativePosition;
+        top: 200px;
+        left: 50px;
+        height: 450px;
+    }
+
+    .HonorMagic4ProAD{
+        position: @RelativePosition;
+        top: 260px;
+        left: 400px;
+        width: 300px;
+    }
+
+    .honorMagic4ProPhoto{
+        position: @RelativePosition;
+        top: 450px;
+        left: 150px;
+        max-width: 80%;
+        height: 450px;
+    }
+
+    .HonorMagicMB14AD{
+        position: @RelativePosition;
+        top: 500px;
+        left: 100px;
+        width: 300px;
+    }
+
+    .honorMB14Photo{
+        position: @RelativePosition;
+        top: 550px;
+        left: 50px;
+        max-width: 50%;
+        height: 350px;
+    }
+
+    .HonorMagicGS3AD
+    {
+        position: @RelativePosition;
+        top: 40px;
+        left: 700px;
+        width: 300px;
+    }
+
+    .honorGS3Photo{
+        position: @RelativePosition;
+        top: 100px;
+        left: 650px;
+        max-width: 50%;
+        height: 350px;
+    }
+
     #searching-button{
         position: @AbsolutePosition;
         top: 70px;
@@ -465,6 +527,10 @@ footer > *
         position: @AbsolutePosition;
         top: 70px;
         left: -80px;
+    }
+
+    footer{
+        width: 100%;
     }
 }
 
@@ -484,7 +550,7 @@ footer > *
 
 
 
-.mediascreenfunc()
+.mediascreenfunc1()
 {
     .Honor70AD{
         position: @AbsolutePosition;
@@ -539,6 +605,348 @@ footer > *
         position: @RelativePosition;
         top: 650px;
         left: 100px;
+        width: 400px;
+        height: 350px;
+    }
+
+    footer{
+        position: @RelativePosition;
+        top: 700px;
+        left: 0;
+        height: 300px;
+    }
+  
+    // #searching-button{
+    //     position: @AbsolutePosition;
+    //     top: 30px;
+    //     left: 400px;
+    // }
+
+    // #search-box{
+    //     position: @AbsolutePosition;
+    //     top: 30px;
+    //     left: 100px;
+    //     width: 150px;
+    // }
+
+    .main-header{
+        visibility: hidden;
+    }
+
+    .hamburger-menu
+    {
+        visibility:visible;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: @AbsolutePosition;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: @AbsolutePosition;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: white;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 9999;
+      }
+
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .menu__item:hover {
+        background-color: white;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+
+      .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    transition-duration: .25s;
+    }
+    .menu__box {
+    transition-duration: .25s;
+    }
+    .menu__item {
+    transition-duration: .25s;
+    }
+}
+
+
+.mediascreenfunc2()
+{
+    .Honor70AD{
+        position: @AbsolutePosition;
+        top: 100px;
+        left: 200px !important;
+    }
+    
+    .HONOR70Photo{
+        position: @RelativePosition;
+        top: 330px;
+        left: 130px !important;
+        width: 450px;
+        height: 400px;
+    }
+
+    .HonorMagic4ProAD{
+        position: @RelativePosition;
+        top: 350px;
+        left: 200px !important;
+    }
+
+    .honorMagic4ProPhoto{
+        position: @RelativePosition;
+        top: 480px;
+        left: 150px !important;
+        width: 450px;
+        height: 400px;
+    }
+
+    .HonorMagicMB14AD{
+        position: @RelativePosition;
+        top: 500px;
+        left: 200px !important;
+    }   
+    
+    .honorMB14Photo{
+        position: @RelativePosition;
+        top: 550px;
+        left: 200px !important;
+        width: 400px;
+        height: 350px;
+    }
+    
+    .HonorMagicGS3AD
+    {
+        position: @RelativePosition;
+        top: 600px;
+        left: 200px !important;
+    }
+
+    .honorGS3Photo{
+        position: @RelativePosition;
+        top: 650px;
+        left: 200px !important;
+        width: 400px;
+        height: 350px;
+    }
+
+    footer{
+        position: @RelativePosition;
+        top: 700px;
+        left: 0;
+        height: 300px;
+    }
+  
+    // #searching-button{
+    //     position: @AbsolutePosition;
+    //     top: 30px;
+    //     left: 400px;
+    // }
+
+    // #search-box{
+    //     position: @AbsolutePosition;
+    //     top: 30px;
+    //     left: 100px;
+    //     width: 150px;
+    // }
+
+    .main-header{
+        visibility: hidden;
+    }
+
+    .hamburger-menu
+    {
+        visibility:visible;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: @AbsolutePosition;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .menu__box {
+        display: block;
+        position: @AbsolutePosition;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: white;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 9999;
+      }
+
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .menu__item:hover {
+        background-color: white;
+      }
+
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+
+      .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+    transition-duration: .25s;
+    }
+    .menu__box {
+    transition-duration: .25s;
+    }
+    .menu__item {
+    transition-duration: .25s;
+    }
+}
+
+
+.mediascreenfunc3()
+{
+    .Honor70AD{
+        position: @AbsolutePosition;
+        top: 100px;
+        left: 300px !important;
+    }
+    
+    .HONOR70Photo{
+        position: @RelativePosition;
+        top: 330px;
+        left: 230px !important;
+        width: 450px;
+        height: 400px;
+    }
+
+    .HonorMagic4ProAD{
+        position: @RelativePosition;
+        top: 350px;
+        left: 300px !important;
+    }
+
+    .honorMagic4ProPhoto{
+        position: @RelativePosition;
+        top: 480px;
+        left: 250px !important;
+        width: 450px;
+        height: 400px;
+    }
+
+    .HonorMagicMB14AD{
+        position: @RelativePosition;
+        top: 500px;
+        left: 300px !important;
+    }   
+    
+    .honorMB14Photo{
+        position: @RelativePosition;
+        top: 550px;
+        left: 300px !important;
+        width: 400px;
+        height: 350px;
+    }
+    
+    .HonorMagicGS3AD
+    {
+        position: @RelativePosition;
+        top: 600px;
+        left: 300px !important;
+    }
+
+    .honorGS3Photo{
+        position: @RelativePosition;
+        top: 650px;
+        left: 300px !important;
         width: 400px;
         height: 350px;
     }

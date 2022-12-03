@@ -741,48 +741,48 @@ footer > * {
   .Honor70AD {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 200px !important;
   }
   .HONOR70Photo {
     position: relative;
     top: 330px;
-    left: 30px;
+    left: 130px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagic4ProAD {
     position: relative;
     top: 350px;
-    left: 100px;
+    left: 200px !important;
   }
   .honorMagic4ProPhoto {
     position: relative;
     top: 480px;
-    left: 50px;
+    left: 150px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagicMB14AD {
     position: relative;
     top: 500px;
-    left: 100px;
+    left: 200px !important;
   }
   .honorMB14Photo {
     position: relative;
     top: 550px;
-    left: 100px;
+    left: 200px !important;
     width: 400px;
     height: 350px;
   }
   .HonorMagicGS3AD {
     position: relative;
     top: 600px;
-    left: 100px;
+    left: 200px !important;
   }
   .honorGS3Photo {
     position: relative;
     top: 650px;
-    left: 100px;
+    left: 200px !important;
     width: 400px;
     height: 350px;
   }
@@ -888,48 +888,48 @@ footer > * {
   .Honor70AD {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 200px !important;
   }
   .HONOR70Photo {
     position: relative;
     top: 330px;
-    left: 30px;
+    left: 130px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagic4ProAD {
     position: relative;
     top: 350px;
-    left: 100px;
+    left: 200px !important;
   }
   .honorMagic4ProPhoto {
     position: relative;
     top: 480px;
-    left: 50px;
+    left: 150px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagicMB14AD {
     position: relative;
     top: 500px;
-    left: 100px;
+    left: 200px !important;
   }
   .honorMB14Photo {
     position: relative;
     top: 550px;
-    left: 100px;
+    left: 200px !important;
     width: 400px;
     height: 350px;
   }
   .HonorMagicGS3AD {
     position: relative;
     top: 600px;
-    left: 100px;
+    left: 200px !important;
   }
   .honorGS3Photo {
     position: relative;
     top: 650px;
-    left: 100px;
+    left: 200px !important;
     width: 400px;
     height: 350px;
   }
@@ -1035,48 +1035,48 @@ footer > * {
   .Honor70AD {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 300px !important;
   }
   .HONOR70Photo {
     position: relative;
     top: 330px;
-    left: 30px;
+    left: 230px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagic4ProAD {
     position: relative;
     top: 350px;
-    left: 100px;
+    left: 300px !important;
   }
   .honorMagic4ProPhoto {
     position: relative;
     top: 480px;
-    left: 50px;
+    left: 250px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagicMB14AD {
     position: relative;
     top: 500px;
-    left: 100px;
+    left: 300px !important;
   }
   .honorMB14Photo {
     position: relative;
     top: 550px;
-    left: 100px;
+    left: 300px !important;
     width: 400px;
     height: 350px;
   }
   .HonorMagicGS3AD {
     position: relative;
     top: 600px;
-    left: 100px;
+    left: 300px !important;
   }
   .honorGS3Photo {
     position: relative;
     top: 650px;
-    left: 100px;
+    left: 300px !important;
     width: 400px;
     height: 350px;
   }
@@ -1182,48 +1182,48 @@ footer > * {
   .Honor70AD {
     position: absolute;
     top: 100px;
-    left: 100px;
+    left: 300px !important;
   }
   .HONOR70Photo {
     position: relative;
     top: 330px;
-    left: 30px;
+    left: 230px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagic4ProAD {
     position: relative;
     top: 350px;
-    left: 100px;
+    left: 300px !important;
   }
   .honorMagic4ProPhoto {
     position: relative;
     top: 480px;
-    left: 50px;
+    left: 250px !important;
     width: 450px;
     height: 400px;
   }
   .HonorMagicMB14AD {
     position: relative;
     top: 500px;
-    left: 100px;
+    left: 300px !important;
   }
   .honorMB14Photo {
     position: relative;
     top: 550px;
-    left: 100px;
+    left: 300px !important;
     width: 400px;
     height: 350px;
   }
   .HonorMagicGS3AD {
     position: relative;
     top: 600px;
-    left: 100px;
+    left: 300px !important;
   }
   .honorGS3Photo {
     position: relative;
     top: 650px;
-    left: 100px;
+    left: 300px !important;
     width: 400px;
     height: 350px;
   }
@@ -1315,6 +1315,57 @@ footer > * {
   }
 }
 @media screen and (min-width: 950px) and (max-width: 1300px) {
+  .Honor70AD {
+    position: absolute;
+    top: 80px;
+    left: 400px;
+    width: 300px;
+  }
+  .HONOR70Photo {
+    position: relative;
+    top: 200px;
+    left: 50px;
+    height: 450px;
+  }
+  .HonorMagic4ProAD {
+    position: relative;
+    top: 260px;
+    left: 400px;
+    width: 300px;
+  }
+  .honorMagic4ProPhoto {
+    position: relative;
+    top: 450px;
+    left: 150px;
+    max-width: 80%;
+    height: 450px;
+  }
+  .HonorMagicMB14AD {
+    position: relative;
+    top: 500px;
+    left: 100px;
+    width: 300px;
+  }
+  .honorMB14Photo {
+    position: relative;
+    top: 550px;
+    left: 50px;
+    max-width: 50%;
+    height: 350px;
+  }
+  .HonorMagicGS3AD {
+    position: relative;
+    top: 40px;
+    left: 700px;
+    width: 300px;
+  }
+  .honorGS3Photo {
+    position: relative;
+    top: 100px;
+    left: 650px;
+    max-width: 50%;
+    height: 350px;
+  }
   #searching-button {
     position: absolute;
     top: 70px;
@@ -1324,6 +1375,9 @@ footer > * {
     position: absolute;
     top: 70px;
     left: -80px;
+  }
+  footer {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1300px) and (max-width: 1415px) {

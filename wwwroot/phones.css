@@ -1702,6 +1702,82 @@ footer > * {
     top: 70px;
     left: -80px;
   }
+  #first-product {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #second-product {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #third-product {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #fourth-product {
+    position: absolute;
+    top: 650px;
+    left: 100px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #fifth-product {
+    position: absolute;
+    top: 650px;
+    left: 450px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #sixth-product {
+    position: absolute;
+    top: 650px;
+    left: 800px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #seventh-product {
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  #eighth-product {
+    position: absolute;
+    top: 1100px;
+    left: 450px;
+    border: 1px transparent;
+    height: 400px;
+    width: 300px;
+    background-color: #f7f7f7;
+  }
+  footer {
+    position: absolute;
+    top: 1550px;
+  }
 }
 @media screen and (min-width: 1300px) and (max-width: 1415px) {
   #searching-button {

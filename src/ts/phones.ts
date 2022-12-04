@@ -1,5 +1,7 @@
 import $ from "jquery";
 
+"use strict";
+
 $(function f()
 {
     let $currentCategory = $("#nav");
@@ -454,33 +456,34 @@ $(function f()
         });
 
         var buyButton = $('.submit-button').each(function() {
-           var el = $(this);
-           var key = (el.attr('caption'));
+         let el = $(this);
+         let key = (el.attr('caption'));
            el.text(aze.buyButton);
         });
 
         var aboutusf = $('#aboutus').each(function() {
-           var el = $(this);
-           var key = (el.attr('caption'));
+         let el = $(this);
+           let key = (el.attr('caption'));
            el.text(aze.aboutus);
         });
 
         var contacts = $('#contacts').each(function() {
-           var el = $(this);
-           var key = (el.attr('caption'));
+         let el = $(this);
+           let key = (el.attr('caption'));
            el.text(aze.contacts);
         });
 
         var address = $('#address').each(function() {
-           var el = $(this);
-           var key = (el.attr('caption'));
+           let el = $(this);
+           let key = (el.attr('caption'));
            el.text(aze.address);
         });
 
         var partners = $('#partners').each(function() {
-           var el = $(this);
-           var key = (el.attr('caption'));
-           el.text(aze.partners);
+           let el = $(this);
+           let key = (el.attr('caption'));
+           let a = JSON.parse(localStorage.getItem("aze"));
+           el.text(a.partners);
         });
 
        //  var myswitcher = $('#switcher').each(function() {
@@ -517,7 +520,7 @@ $(function f()
        buyButton: "Buy",
        aboutus: "About us",
        contacts: "Contacts: 8800 7001677",
-       address: "Address: Россия, Москва",
+       address: "Address: Russia, Moscow",
        partners: "Partners: ",
      //  myswitcher: "Theme switcher: Light theme"
      };
@@ -533,7 +536,7 @@ $(function f()
        buyButton: "Almaq",
        aboutus: "Bizim haqqinda",
        contacts: "Kontaktlar: 8800 7001677",
-       address: "Unvan: Россия, Москва",
+       address: "Unvan: Rusiya, Moskva",
        partners: "Partnyorlar:",
      //  myswitcher: "Movzu deyisimi: Aciq movzu"
      };

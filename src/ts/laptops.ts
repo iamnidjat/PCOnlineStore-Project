@@ -35,6 +35,28 @@ $(function f()
 
     let counter: number = 0;
 
+    localStorage.setItem("bodyDarkColor", JSON.stringify($("body").css("background-color", "rgb(47, 47, 47)")));
+    localStorage.setItem("mainHeaderDarkColor", JSON.stringify($mainHeader.css("background-color", "rgb(47, 47, 47)")));
+    localStorage.setItem("goodsTypeDarkColor", JSON.stringify($goodsType.css("color", "white")));
+    localStorage.setItem("firstProductDarkColor", JSON.stringify($firstproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("secondProductDarkColor", JSON.stringify($secondproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("thirdProductDarkColor", JSON.stringify($thirdproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("fourthProductDarkColor", JSON.stringify($fourthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("fifthProductDarkColor", JSON.stringify($fifthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("sixthProductDarkColor", JSON.stringify($sixthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("seventhProductDarkColor", JSON.stringify($seventhproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("eighthProductDarkColor", JSON.stringify($eighthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("productTitleDarkColor", JSON.stringify($productTitle.css("color", "white")));
+    localStorage.setItem("productPriceDarkColor", JSON.stringify($productPrice.css("color", "white")));
+    localStorage.setItem("productDescDarkColor", JSON.stringify($productDesc.css("color", "white")));
+    localStorage.setItem("currentCategoryDarkColor", JSON.stringify($currentCategory.css("color", "white")));
+    localStorage.setItem("tabletsnavDarkColor", JSON.stringify($tabletsnav.css("color", "white")));
+    localStorage.setItem("laptopsnavDarkColor", JSON.stringify($phonesnav.css("color", "white")));
+    localStorage.setItem("wearablesnavDarkColor", JSON.stringify($wearablesnav.css("color", "white")));
+    localStorage.setItem("purchasesnavDarkColor", JSON.stringify($purchasesnav.css("color", "white")));
+    localStorage.setItem("aboutusnavDarkColor", JSON.stringify($aboutusnav.css("color", "white")));
+    localStorage.setItem("searchBoxDarkColor", JSON.stringify($searchBox.css("color", "white")));
+
     $searchingButton.on("click", () => 
     {
         $.ajax({

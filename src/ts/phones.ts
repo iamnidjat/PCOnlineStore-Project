@@ -1,7 +1,5 @@
 import $ from "jquery";
 
-"use strict";
-
 $(function f()
 {
     let $currentCategory = $("#nav");
@@ -47,7 +45,27 @@ $(function f()
     ///////////////////////////////////
     let counter: number = 0;
 
-   
+    localStorage.setItem("bodyDarkColor", JSON.stringify($("body").css("background-color", "rgb(47, 47, 47)")));
+    localStorage.setItem("mainHeaderDarkColor", JSON.stringify($mainHeader.css("background-color", "rgb(47, 47, 47)")));
+    localStorage.setItem("goodsTypeDarkColor", JSON.stringify($goodsType.css("color", "white")));
+    localStorage.setItem("firstProductDarkColor", JSON.stringify($firstproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("secondProductDarkColor", JSON.stringify($secondproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("thirdProductDarkColor", JSON.stringify($thirdproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("fourthProductDarkColor", JSON.stringify($fourthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("fifthProductDarkColor", JSON.stringify($fifthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("sixthProductDarkColor", JSON.stringify($sixthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("seventhProductDarkColor", JSON.stringify($seventhproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("eighthProductDarkColor", JSON.stringify($eighthproduct.css("background-color", "rgb(146,146,146)")));
+    localStorage.setItem("productTitleDarkColor", JSON.stringify($productTitle.css("color", "white")));
+    localStorage.setItem("productPriceDarkColor", JSON.stringify($productPrice.css("color", "white")));
+    localStorage.setItem("productDescDarkColor", JSON.stringify($productDesc.css("color", "white")));
+    localStorage.setItem("currentCategoryDarkColor", JSON.stringify($currentCategory.css("color", "white")));
+    localStorage.setItem("tabletsnavDarkColor", JSON.stringify($tabletsnav.css("color", "white")));
+    localStorage.setItem("laptopsnavDarkColor", JSON.stringify($laptopsnav.css("color", "white")));
+    localStorage.setItem("wearablesnavDarkColor", JSON.stringify($wearablesnav.css("color", "white")));
+    localStorage.setItem("purchasesnavDarkColor", JSON.stringify($purchasesnav.css("color", "white")));
+    localStorage.setItem("aboutusnavDarkColor", JSON.stringify($aboutusnav.css("color", "white")));
+    localStorage.setItem("searchBoxDarkColor", JSON.stringify($searchBox.css("color", "white")));
 
     $viewProductsButton.on('click', function() {
         
@@ -130,42 +148,33 @@ $(function f()
     });
 
     ///////////////////////////////////////////////////
-    localStorage.setItem("bodyDarkColor", "rgb(47, 47, 47)");
-
-    let a = localStorage.getItem("bodyDarkColor");
 
     $switcher.on("click", () => {
         if (counter === 0)
         {
             $switcher.val("Dark theme");
 
-           // localStorage.setItem("bodyDarkColor", "rgb(47, 47, 47)");
-
-            $("body").css("background-color", "rgb(47, 47, 47)");
-            //$("body").css("background-color", a);
-            $mainHeader.css("background-color", "rgb(47, 47, 47)");
-            $goodsType.css("color", "white");
-            $firstproduct.css("background-color", "rgb(146, 146, 146)");
-            $secondproduct.css("background-color", "rgb(146, 146, 146)");
-            $thirdproduct.css("background-color", "rgb(146, 146, 146)");
-            $fourthproduct.css("background-color", "rgb(146, 146, 146)");
-            $fifthproduct.css("background-color", "rgb(146, 146, 146)");
-            $sixthproduct.css("background-color", "rgb(146, 146, 146)");
-            $seventhproduct.css("background-color", "rgb(146, 146, 146)");
-            $eighthproduct.css("background-color", "rgb(146, 146, 146)");
-            $productTitle.css("color", "white");
-            $productPrice.css("color", "white");
-            $productDesc.css("color", "white");
-            $currentCategory.css("color", "white");
-            $tabletsnav.css("color", "white");
-            $laptopsnav.css("color", "white");
-            $wearablesnav.css("color", "white");
-            $purchasesnav.css("color", "white");
-            $aboutusnav.css("color", "white");
-            $searchBox.css("color", "white");
-
-
-            
+            // JSON.parse(localStorage.getItem("bodyDarkColor"));
+            // JSON.parse(localStorage.getItem("mainHeaderDarkColor"));
+            // JSON.parse(localStorage.getItem("goodsTypeDarkColor"));
+            // JSON.parse(localStorage.getItem("firstProductDarkColor"));
+            // JSON.parse(localStorage.getItem("secondProductDarkColor"));
+            // JSON.parse(localStorage.getItem("thirdProductDarkColor"));
+            // JSON.parse(localStorage.getItem("fourthProductDarkColor"));
+            // JSON.parse(localStorage.getItem("fifthProductDarkColor"));
+            // JSON.parse(localStorage.getItem("sixthProductDarkColor"));
+            // JSON.parse(localStorage.getItem("seventhProductDarkColor"));
+            // JSON.parse(localStorage.getItem("eighthProductDarkColor"));
+            // JSON.parse(localStorage.getItem("productTitleDarkColor"));
+            // JSON.parse(localStorage.getItem("productPriceDarkColor"));
+            // JSON.parse(localStorage.getItem("productDescDarkColor"));
+            // JSON.parse(localStorage.getItem("currentCategoryDarkColor"));
+            // JSON.parse(localStorage.getItem("tabletsnavDarkColor"));
+            // JSON.parse(localStorage.getItem("laptopsnavDarkColor"));
+            // JSON.parse(localStorage.getItem("wearablesnavDarkColor"));
+            // JSON.parse(localStorage.getItem("purchasesnavDarkColor"));
+            // JSON.parse(localStorage.getItem("aboutusnavDarkColor"));
+            // JSON.parse(localStorage.getItem("searchBoxDarkColor"));
 
             ++counter;
         }

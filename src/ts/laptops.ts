@@ -56,6 +56,7 @@ $(function f()
     localStorage.setItem("purchasesnavDarkColor", JSON.stringify($purchasesnav.css("color", "white")));
     localStorage.setItem("aboutusnavDarkColor", JSON.stringify($aboutusnav.css("color", "white")));
     localStorage.setItem("searchBoxDarkColor", JSON.stringify($searchBox.css("color", "white")));
+    localStorage.setItem("bodyLightColor", JSON.stringify($("body").css("background-color", "white")));
 
     $searchingButton.on("click", () => 
     {

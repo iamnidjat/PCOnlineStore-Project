@@ -66,6 +66,7 @@ $(function f()
     localStorage.setItem("purchasesnavDarkColor", JSON.stringify($purchasesnav.css("color", "white")));
     localStorage.setItem("aboutusnavDarkColor", JSON.stringify($aboutusnav.css("color", "white")));
     localStorage.setItem("searchBoxDarkColor", JSON.stringify($searchBox.css("color", "white")));
+    localStorage.setItem("bodyLightColor", JSON.stringify($("body").css("background-color", "white")));
 
     $viewProductsButton.on('click', function() {
         
@@ -154,27 +155,27 @@ $(function f()
         {
             $switcher.val("Dark theme");
 
-            // JSON.parse(localStorage.getItem("bodyDarkColor"));
-            // JSON.parse(localStorage.getItem("mainHeaderDarkColor"));
-            // JSON.parse(localStorage.getItem("goodsTypeDarkColor"));
-            // JSON.parse(localStorage.getItem("firstProductDarkColor"));
-            // JSON.parse(localStorage.getItem("secondProductDarkColor"));
-            // JSON.parse(localStorage.getItem("thirdProductDarkColor"));
-            // JSON.parse(localStorage.getItem("fourthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("fifthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("sixthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("seventhProductDarkColor"));
-            // JSON.parse(localStorage.getItem("eighthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("productTitleDarkColor"));
-            // JSON.parse(localStorage.getItem("productPriceDarkColor"));
-            // JSON.parse(localStorage.getItem("productDescDarkColor"));
-            // JSON.parse(localStorage.getItem("currentCategoryDarkColor"));
-            // JSON.parse(localStorage.getItem("tabletsnavDarkColor"));
-            // JSON.parse(localStorage.getItem("laptopsnavDarkColor"));
-            // JSON.parse(localStorage.getItem("wearablesnavDarkColor"));
-            // JSON.parse(localStorage.getItem("purchasesnavDarkColor"));
-            // JSON.parse(localStorage.getItem("aboutusnavDarkColor"));
-            // JSON.parse(localStorage.getItem("searchBoxDarkColor"));
+            JSON.parse(localStorage.getItem("bodyDarkColor"));
+            JSON.parse(localStorage.getItem("mainHeaderDarkColor"));
+            JSON.parse(localStorage.getItem("goodsTypeDarkColor"));
+            JSON.parse(localStorage.getItem("firstProductDarkColor"));
+            JSON.parse(localStorage.getItem("secondProductDarkColor"));
+            JSON.parse(localStorage.getItem("thirdProductDarkColor"));
+            JSON.parse(localStorage.getItem("fourthProductDarkColor"));
+            JSON.parse(localStorage.getItem("fifthProductDarkColor"));
+            JSON.parse(localStorage.getItem("sixthProductDarkColor"));
+            JSON.parse(localStorage.getItem("seventhProductDarkColor"));
+            JSON.parse(localStorage.getItem("eighthProductDarkColor"));
+            JSON.parse(localStorage.getItem("productTitleDarkColor"));
+            JSON.parse(localStorage.getItem("productPriceDarkColor"));
+            JSON.parse(localStorage.getItem("productDescDarkColor"));
+            JSON.parse(localStorage.getItem("currentCategoryDarkColor"));
+            JSON.parse(localStorage.getItem("tabletsnavDarkColor"));
+            JSON.parse(localStorage.getItem("laptopsnavDarkColor"));
+            JSON.parse(localStorage.getItem("wearablesnavDarkColor"));
+            JSON.parse(localStorage.getItem("purchasesnavDarkColor"));
+            JSON.parse(localStorage.getItem("aboutusnavDarkColor"));
+            JSON.parse(localStorage.getItem("searchBoxDarkColor"));
 
             ++counter;
         }
@@ -182,7 +183,8 @@ $(function f()
         {
             $switcher.val("Light theme");
 
-            $("body").css("background-color", "white");
+            //$("body").css("background-color", "white");
+            JSON.parse(localStorage.getItem("bodyLightColor"))
             $mainHeader.css("background-color", "white");
             $goodsType.css("color", "black");
             $firstproduct.css("background-color", "rgb(247, 247, 247)");
@@ -203,8 +205,6 @@ $(function f()
             $purchasesnav.css("color", "rgb(85,26,169)");
             $aboutusnav.css("color", "rgb(85,26,169)");
             $searchBox.css("color", "black");
-
-          //  localStorage.setItem("bodyLightColor", "white");
 
             --counter;
         }

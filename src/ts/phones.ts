@@ -68,13 +68,20 @@ $(function f()
    // localStorage.removeItem("purchasesnavDarkColor");
    // localStorage.removeItem("aboutusnavDarkColor");
 
- //  changeBackground("bodyDarkColor", "rgb(47, 47, 47)");
-
-
     let counter: number = 0;
 
-    changeColor("bodyDarkColor", "rgb(47, 47, 47)");
-    //setColor("mainHeaderDarkColor", "mainHeaderLightColor", $mainHeader)
+    //changeColor("bodyDarkColor", "rgb(47, 47, 47)");
+   //  changeColor("bodyLightColor", "white");
+
+   if (JSON.parse(localStorage.getItem("counter")) === 0)
+   {
+      changeColor("bodyLightColor", "white");
+   }
+
+   else if (JSON.parse(localStorage.getItem("counter")) === 1)
+   {
+      changeColor("bodyDarkColor", "rgb(47, 47, 47)");
+   }
 
     $viewProductsButton.on('click', function() {
         
@@ -159,9 +166,9 @@ $(function f()
     $switcher.on("click", () => {
         if (counter === 0)
         {
-         alert("bbb");
             $switcher.val("Dark theme");
 
+               changeColor("bodyDarkColor", "rgb(47, 47, 47)");
             // changeBackground("bodyDarkColor", "rgb(47, 47, 47)");
 
             // JSON.parse(localStorage.getItem("bodyDarkColor"));
@@ -187,14 +194,15 @@ $(function f()
             // JSON.parse(localStorage.getItem("searchBoxDarkColor"));
 
             ++counter;
-            alert(counter);
-            changeColor("bodyDarkColor", "rgb(47, 47, 47)");
+
+            localStorage.setItem("counter", JSON.stringify(counter));
+     
         }
         else
         {
-         alert("aaa");
             $switcher.val("Light theme");
 
+            changeColor("bodyLightColor", "white");
          // changeBackground("bodyLightColor", "white");
             // JSON.parse(localStorage.getItem("bodyLightColor"));
             // JSON.parse(localStorage.getItem("mainHeaderLightColor"));
@@ -219,8 +227,8 @@ $(function f()
             // JSON.parse(localStorage.getItem("searchBoxLightColor"));
 
             --counter;
-            alert(counter);
-            changeColor("bodyLightColor", "white");
+
+            localStorage.setItem("counter", JSON.stringify(counter));
         }
     });
 
@@ -582,27 +590,11 @@ $(function f()
 function changeColor(key: string, color: string) {
    if (localStorage.getItem(key)) 
    {
-       //document.body.style.backgroundColor = localStorage.getItem(key);
        $("body").css("background-color", localStorage.getItem(key));
    }
    else
    {
-      // document.body.style.backgroundColor =  color;
        $("body").css("background-color", color);
        localStorage.setItem(key, color);
-   }
-}
-
-
-function setColor(key1: string, key2: string, target: any) {
-   if (localStorage.getItem(key1)) 
-   {
-       //document.body.style.backgroundColor = localStorage.getItem(key);
-       $("body").css(target, JSON.parse(localStorage.getItem(key1)));
-   }
-   else if (localStorage.getItem(key2)) 
-   {
-       //document.body.style.backgroundColor = localStorage.getItem(key);
-       $("body").css(target, JSON.parse(localStorage.getItem(key2)));
    }
 }

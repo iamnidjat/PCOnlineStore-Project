@@ -42,45 +42,62 @@ $(function f()
    //  let $partners = $("#partners");
    //  let $myswitcher = $("#switcher");
 
-    ///////////////////////////////////
-
-
-   // localStorage.removeItem("bodyDarkColor");
-   // localStorage.removeItem("mainHeaderDarkColor");
-   // localStorage.removeItem("goodsTypeDarkColor");
-   // localStorage.removeItem("firstProductDarkColor");
-   // localStorage.removeItem("secondProductDarkColor");
-   // localStorage.removeItem("thirdProductDarkColor");
-   // localStorage.removeItem("fourthProductDarkColor");
-   // localStorage.removeItem("fifthProductDarkColor");
-   // localStorage.removeItem("sixthProductDarkColor");
-   // localStorage.removeItem("seventhProductDarkColor");
-   // localStorage.removeItem("eighthProductDarkColor");
-   // localStorage.removeItem("productTitleDarkColor");
-   // localStorage.removeItem("searchBoxDarkColor");
-   // localStorage.removeItem("productTitleDarkColor");
-   // localStorage.removeItem("productPriceDarkColor");
-   // localStorage.removeItem("productDescDarkColor");
-   // localStorage.removeItem("currentCategoryDarkColor");
-   // localStorage.removeItem("tabletsnavDarkColor");
-   // localStorage.removeItem("laptopsnavDarkColor");
-   // localStorage.removeItem("wearablesnavDarkColor");
-   // localStorage.removeItem("purchasesnavDarkColor");
-   // localStorage.removeItem("aboutusnavDarkColor");
+    ///////////////////////////////////////////////////
 
     let counter: number = 0;
 
-    //changeColor("bodyDarkColor", "rgb(47, 47, 47)");
-   //  changeColor("bodyLightColor", "white");
-
    if (JSON.parse(localStorage.getItem("counter")) === 0)
    {
-      changeColor("bodyLightColor", "white");
+      $switcher.val("Light theme");
+
+      changeBackColor("bodyLightColor", "white", "body");
+      changeBackColor("mainHeaderLightColor", "white", $mainHeader);
+      changeColor("goodsTypeLightColor", "black", $goodsType);
+      changeBackColor("firstProductLightColor", "rgb(247, 247, 247)", $firstproduct);
+      changeBackColor("secondProductLightColor", "rgb(247, 247, 247)", $secondproduct);
+      changeBackColor("thirdProductLightColor", "rgb(247, 247, 247)", $thirdproduct);
+      changeBackColor("fourthProductLightColor", "rrgb(247, 247, 247)", $fourthproduct);
+      changeBackColor("fifthProductLightColor", "rgb(247, 247, 247)", $fifthproduct);
+      changeBackColor("sixthProductLightColor", "rgb(247, 247, 247)", $sixthproduct);
+      changeBackColor("seventhProductLightColor", "rrgb(247, 247, 247)", $seventhproduct);
+      changeBackColor("eighthProductLightColor", "rgb(247, 247, 247)", $eighthproduct);
+      changeColor("productTitleLightColor", "black", $productTitle);
+      changeColor("productPriceLightColor", "black", $productPrice);
+      changeColor("productDescLightColor", "black", $productDesc);
+      changeColor("currentCategoryLightColor", "rgb(85,26,169)", $currentCategory);
+      changeColor("tabletsnavLightColor", "rgb(85,26,169)", $tabletsnav);
+      changeColor("laptopsnavLightColor", "rgb(85,26,169)", $laptopsnav);
+      changeColor("wearablesnavLightColor", "rgb(85,26,169)", $wearablesnav);
+      changeColor("purchasesnavLightColor", "rgb(85,26,169)", $purchasesnav);
+      changeColor("aboutusnavLightColor", "rgb(85,26,169)", $aboutusnav);
+      changeColor("searchBoxLightColor", "black", $searchBox);
    }
 
    else if (JSON.parse(localStorage.getItem("counter")) === 1)
    {
-      changeColor("bodyDarkColor", "rgb(47, 47, 47)");
+      $switcher.val("Dark theme");
+
+      changeBackColor("bodyDarkColor", "rgb(47, 47, 47)", "body");
+      changeBackColor("mainHeaderDarkColor", "rgb(47, 47, 47)", $mainHeader);
+      changeColor("goodsTypeDarkColor", "white", $goodsType);
+      changeBackColor("firstProductDarkColor", "rgb(146, 146, 146)", $firstproduct);
+      changeBackColor("secondProductDarkColor", "rgb(146, 146, 146)", $secondproduct);
+      changeBackColor("thirdProductDarkColor", "rgb(146, 146, 146)", $thirdproduct);
+      changeBackColor("fourthProductDarkColor", "rgb(146, 146, 146)", $fourthproduct);
+      changeBackColor("fifthProductDarkColor", "rgb(146, 146, 146)", $fifthproduct);
+      changeBackColor("sixthProductDarkColor", "rgb(146, 146, 146)", $sixthproduct);
+      changeBackColor("seventhProductDarkColor", "rgb(146, 146, 146)", $seventhproduct);
+      changeBackColor("eighthProductDarkColor", "rgb(146, 146, 146)", $eighthproduct);
+      changeColor("productTitleDarkColor", "white", $productTitle);
+      changeColor("productPriceDarkColor", "white", $productPrice);
+      changeColor("productDescDarkColor", "white", $productDesc);
+      changeColor("currentCategoryDarkColor", "white", $currentCategory);
+      changeColor("tabletsnavDarkColor", "white", $tabletsnav);
+      changeColor("laptopsnavDarkColor", "white", $laptopsnav);
+      changeColor("wearablesnavDarkColor", "white", $wearablesnav);
+      changeColor("purchasesnavDarkColor", "white", $purchasesnav);
+      changeColor("aboutusnavDarkColor", "white", $aboutusnav);
+      changeColor("searchBoxDarkColor", "white", $searchBox);
    }
 
     $viewProductsButton.on('click', function() {
@@ -164,67 +181,62 @@ $(function f()
     ///////////////////////////////////////////////////
 
     $switcher.on("click", () => {
-        if (counter === 0)
+        if ($switcher.val() === "Light theme")
         {
             $switcher.val("Dark theme");
 
-               changeColor("bodyDarkColor", "rgb(47, 47, 47)");
-            // changeBackground("bodyDarkColor", "rgb(47, 47, 47)");
-
-            // JSON.parse(localStorage.getItem("bodyDarkColor"));
-            // JSON.parse(localStorage.getItem("mainHeaderDarkColor"));
-            // JSON.parse(localStorage.getItem("goodsTypeDarkColor"));
-            // JSON.parse(localStorage.getItem("firstProductDarkColor"));
-            // JSON.parse(localStorage.getItem("secondProductDarkColor"));
-            // JSON.parse(localStorage.getItem("thirdProductDarkColor"));
-            // JSON.parse(localStorage.getItem("fourthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("fifthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("sixthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("seventhProductDarkColor"));
-            // JSON.parse(localStorage.getItem("eighthProductDarkColor"));
-            // JSON.parse(localStorage.getItem("productTitleDarkColor"));
-            // JSON.parse(localStorage.getItem("productPriceDarkColor"));
-            // JSON.parse(localStorage.getItem("productDescDarkColor"));
-            // JSON.parse(localStorage.getItem("currentCategoryDarkColor"));
-            // JSON.parse(localStorage.getItem("tabletsnavDarkColor"));
-            // JSON.parse(localStorage.getItem("laptopsnavDarkColor"));
-            // JSON.parse(localStorage.getItem("wearablesnavDarkColor"));
-            // JSON.parse(localStorage.getItem("purchasesnavDarkColor"));
-            // JSON.parse(localStorage.getItem("aboutusnavDarkColor"));
-            // JSON.parse(localStorage.getItem("searchBoxDarkColor"));
+            changeBackColor("bodyDarkColor", "rgb(47, 47, 47)", "body");
+            changeBackColor("mainHeaderDarkColor", "rgb(47, 47, 47)", $mainHeader);
+            changeColor("goodsTypeDarkColor", "white", $goodsType);
+            changeBackColor("firstProductDarkColor", "rgb(146, 146, 146)", $firstproduct);
+            changeBackColor("secondProductDarkColor", "rgb(146, 146, 146)", $secondproduct);
+            changeBackColor("thirdProductDarkColor", "rgb(146, 146, 146)", $thirdproduct);
+            changeBackColor("fourthProductDarkColor", "rgb(146, 146, 146)", $fourthproduct);
+            changeBackColor("fifthProductDarkColor", "rgb(146, 146, 146)", $fifthproduct);
+            changeBackColor("sixthProductDarkColor", "rgb(146, 146, 146)", $sixthproduct);
+            changeBackColor("seventhProductDarkColor", "rgb(146, 146, 146)", $seventhproduct);
+            changeBackColor("eighthProductDarkColor", "rgb(146, 146, 146)", $eighthproduct);
+            changeColor("productTitleDarkColor", "white", $productTitle);
+            changeColor("productPriceDarkColor", "white", $productPrice);
+            changeColor("productDescDarkColor", "white", $productDesc);
+            changeColor("currentCategoryDarkColor", "white", $currentCategory);
+            changeColor("tabletsnavDarkColor", "white", $tabletsnav);
+            changeColor("laptopsnavDarkColor", "white", $laptopsnav);
+            changeColor("wearablesnavDarkColor", "white", $wearablesnav);
+            changeColor("purchasesnavDarkColor", "white", $purchasesnav);
+            changeColor("aboutusnavDarkColor", "white", $aboutusnav);
+            changeColor("searchBoxDarkColor", "white", $searchBox);
 
             ++counter;
 
             localStorage.setItem("counter", JSON.stringify(counter));
-     
+    
         }
-        else
+        else if ($switcher.val() === "Dark theme")
         {
             $switcher.val("Light theme");
 
-            changeColor("bodyLightColor", "white");
-         // changeBackground("bodyLightColor", "white");
-            // JSON.parse(localStorage.getItem("bodyLightColor"));
-            // JSON.parse(localStorage.getItem("mainHeaderLightColor"));
-            // JSON.parse(localStorage.getItem("goodsTypeLightColor"));
-            // JSON.parse(localStorage.getItem("firstProductLightColor"));
-            // JSON.parse(localStorage.getItem("secondProductLightColor"));
-            // JSON.parse(localStorage.getItem("thirdProductLightColor"));
-            // JSON.parse(localStorage.getItem("fourthProductLightColor"));
-            // JSON.parse(localStorage.getItem("fifthProductLightColor"));
-            // JSON.parse(localStorage.getItem("sixthProductLightColor"));
-            // JSON.parse(localStorage.getItem("seventhProductLightColor"));
-            // JSON.parse(localStorage.getItem("eighthProductLightColor"));
-            // JSON.parse(localStorage.getItem("productTitleLightColor"));
-            // JSON.parse(localStorage.getItem("productPriceLightColor"));
-            // JSON.parse(localStorage.getItem("productDescLightColor"));
-            // JSON.parse(localStorage.getItem("currentCategoryLightColor"));
-            // JSON.parse(localStorage.getItem("tabletsnavLightColor"));
-            // JSON.parse(localStorage.getItem("laptopsnavLightColor"));
-            // JSON.parse(localStorage.getItem("wearablesnavLightColor"));
-            // JSON.parse(localStorage.getItem("purchasesnavLightColor"));
-            // JSON.parse(localStorage.getItem("aboutusnavLightColor"));
-            // JSON.parse(localStorage.getItem("searchBoxLightColor"));
+            changeBackColor("bodyLightColor", "white", "body");
+            changeBackColor("mainHeaderLightColor", "white", $mainHeader);
+            changeColor("goodsTypeLightColor", "black", $goodsType);
+            changeBackColor("firstProductLightColor", "rgb(247, 247, 247)", $firstproduct);
+            changeBackColor("secondProductLightColor", "rgb(247, 247, 247)", $secondproduct);
+            changeBackColor("thirdProductLightColor", "rgb(247, 247, 247)", $thirdproduct);
+            changeBackColor("fourthProductLightColor", "rrgb(247, 247, 247)", $fourthproduct);
+            changeBackColor("fifthProductLightColor", "rgb(247, 247, 247)", $fifthproduct);
+            changeBackColor("sixthProductLightColor", "rgb(247, 247, 247)", $sixthproduct);
+            changeBackColor("seventhProductLightColor", "rrgb(247, 247, 247)", $seventhproduct);
+            changeBackColor("eighthProductLightColor", "rgb(247, 247, 247)", $eighthproduct);
+            changeColor("productTitleLightColor", "black", $productTitle);
+            changeColor("productPriceLightColor", "black", $productPrice);
+            changeColor("productDescLightColor", "black", $productDesc);
+            changeColor("currentCategoryLightColor", "rgb(85,26,169)", $currentCategory);
+            changeColor("tabletsnavLightColor", "rgb(85,26,169)", $tabletsnav);
+            changeColor("laptopsnavLightColor", "rgb(85,26,169)", $laptopsnav);
+            changeColor("wearablesnavLightColor", "rgb(85,26,169)", $wearablesnav);
+            changeColor("purchasesnavLightColor", "rgb(85,26,169)", $purchasesnav);
+            changeColor("aboutusnavLightColor", "rgb(85,26,169)", $aboutusnav);
+            changeColor("searchBoxLightColor", "black", $searchBox);
 
             --counter;
 
@@ -587,14 +599,27 @@ $(function f()
      localStorage.setItem("eighthProductP", "HONOR X9 5G");
 });
 
-function changeColor(key: string, color: string) {
+function changeBackColor(key: string, color: string, target: any) {
    if (localStorage.getItem(key)) 
    {
-       $("body").css("background-color", localStorage.getItem(key));
+       $(target).css("background-color", localStorage.getItem(key));
    }
    else
    {
-       $("body").css("background-color", color);
+       $(target).css("background-color", color);
        localStorage.setItem(key, color);
    }
 }
+
+function changeColor(key: string, color: string, target: any) {
+   if (localStorage.getItem(key)) 
+   {
+       $(target).css("color", localStorage.getItem(key));
+   }
+   else
+   {
+       $(target).css("color", color);
+       localStorage.setItem(key, color);
+   }
+}
+

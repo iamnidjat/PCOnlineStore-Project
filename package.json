@@ -2,7 +2,6 @@
     "dependencies": {
         "@types/jquery": "^3.5.14",
         "@types/js-cookie": "^3.0.2",
-        "cors-anywhere": "^0.4.4",
         "esbuild": "^0.15.12",
         "jquery": "^3.6.1",
         "js-cookie": "^3.0.1",

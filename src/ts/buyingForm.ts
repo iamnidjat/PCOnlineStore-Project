@@ -135,5 +135,5 @@ $(function f()
     });
 
     localStorage.setItem("ProductTitle", JSON.stringify($productTitle));
-    localStorage.setItem("ProductTitle", JSON.stringify($productPrice));
+    localStorage.setItem("ProductPrice", JSON.stringify($productPrice));
 });

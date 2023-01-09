@@ -324,10 +324,10 @@ $(function f()
     $buyButton.on("click", () => 
     {
         $.ajax({
-            url: `../pages/buyingForm.html`,
+            url: `buyingForm.html`,
             success: (data) =>
             {
-                window.location.href = 'buyingForm.html';
+               window.location.href = 'buyingForm.html';
             },
             method: "GET",
             crossDomain: true,
@@ -605,7 +605,7 @@ $(function f()
        contacts: "Контакты: 8800 7001677",
        address: "Адрес: Россия, Москва",
        partners: "Партнеры:",
-     //  myswitcher: "Переключатель тем: Светлая тема"
+      myswitcher: "Переключатель тем: Светлая тема"
      };
 
      var eng = {

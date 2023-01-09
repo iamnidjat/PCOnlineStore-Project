@@ -212,9 +212,11 @@ a {
   background-color: black;
 }
 .theme-switcher {
-  background-color: black;
+  background-color: #0fd5ad;
   color: white;
-  border: none;
+  border-radius: 15px;
+  width: 100px;
+  height: 35px;
   cursor: pointer;
 }
 .theme-switcher:hover {

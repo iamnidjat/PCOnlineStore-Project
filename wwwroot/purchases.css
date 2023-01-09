@@ -66,7 +66,7 @@ a {
   display: inline-block;
 }
 .languages {
-  margin-left: 10px;
+  padding: 10px;
 }
 ::placeholder {
   padding: 2px;
@@ -80,6 +80,7 @@ a {
 }
 .languages > img:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 #ad {
   position: absolute;
@@ -113,6 +114,167 @@ a {
 .scrolltopButton:hover {
   background-color: #555;
 }
+.theme-switcher {
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.theme-switcher:hover {
+  opacity: 0.5;
+}
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: -250px;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 100%;
+}
+footer > * {
+  padding: 5px;
+  font-size: 15px;
+  margin-left: 100px;
+  color: white;
+}
+.customLink {
+  padding: -5px;
+}
+.customLink:hover {
+  opacity: 0.5;
+}
+.iconfont {
+  width: 40px;
+  height: 40px;
+}
+.partners {
+  margin-left: -100px;
+}
+.partners:hover {
+  opacity: 0.5;
+}
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .hamburger-menu {
   visibility: hidden;
+}
+@media screen and (max-width: 550px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 420px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 520px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 570px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 620px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 670px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 900px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 770px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 950px) {
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 820px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1300px) {
+  #searching-button {
+    position: absolute;
+    top: 70px;
+    left: 350px;
+  }
+  #search-box {
+    position: absolute;
+    top: 70px;
+    left: -80px;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1415px) {
+  #searching-button {
+    position: absolute;
+    margin-left: 350px;
+  }
+  #search-box {
+    position: absolute;
+    margin-left: 30px;
+  }
 }

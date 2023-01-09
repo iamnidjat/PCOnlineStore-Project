@@ -108,13 +108,34 @@ $(function f()
 
     $searchingButton.on("click", () => 
     {
-        if ($searchBox.val() === "Phones" || $searchBox.val() === "phones" || $searchBox.val() === "phone" || $searchBox.val() === "Phone")
+        if ($searchBox.val() === "Wearables" || $searchBox.val() === "wearables" || $searchBox.val() === "wearable" || $searchBox.val() === "Wearable")
         {
             $.ajax({
-                url: '/phones.html',
+                url: 'wearables.html',
                 success: (data) =>
                 {
-                    //
+                  window.location.href = 'wearables.html';
+                },
+                error: (data) =>
+                {
+                  alert("error!")  
+                },
+                method: "GET",
+                crossDomain: true,
+            });
+        }
+
+        else if ($searchBox.val() === "Laptops" || $searchBox.val() === "laptops" || $searchBox.val() === "Laptop" || $searchBox.val() === "laptop")
+        {
+            $.ajax({
+                url: 'laptops.html',
+                success: (data) =>
+                {
+                  window.location.href = 'laptops.html';
+                },
+                error: (data) =>
+                {
+                  alert("error!")  
                 },
                 method: "GET",
                 crossDomain: true,
@@ -131,7 +152,7 @@ $(function f()
                 },
                 error: (data) =>
                 {
-                  alert("blablabla!")  
+                  alert("error!")  
                 },
                 method: "GET",
                 crossDomain: true,
@@ -140,12 +161,47 @@ $(function f()
 
         else if ($searchBox.val() === "Tablets" || $searchBox.val() === "Tablet" || $searchBox.val() === "tablets" || $searchBox.val() === "tablet")
         {
-           //window.location.href = 'index.html';
             $.ajax({
-                url: '/tablets.html',
+                url: 'tablets.html',
                 success: (data) =>
                 {
                     window.location.href = 'tablets.html';
+                },
+                error: (data) =>
+                {
+                  alert("error!")  
+                },
+                method: "GET",
+                crossDomain: true,
+            });
+        }
+
+        else if ($searchBox.val() === "About us" || $searchBox.val() === "about us" || $searchBox.val() === "About Us" || $searchBox.val() === "about Us"
+        || $searchBox.val() === "About" || $searchBox.val() === "about" || $searchBox.val() === "Us" || $searchBox.val() === "us")
+        {
+            $.ajax({
+                url: 'aboutus.html',
+                success: (data) =>
+                {
+                    window.location.href = 'aboutus.html';
+                },
+                error: (data) =>
+                {
+                  alert("error!")  
+                },
+                method: "GET",
+                crossDomain: true,
+            });
+        }
+
+        else if ($searchBox.val() === "My Purchases" || $searchBox.val() === "My purchases" || $searchBox.val() === "my Purchases" || $searchBox.val() === "my purchases"
+        || $searchBox.val() === "purchases" || $searchBox.val() === "my" || $searchBox.val() === "My" || $searchBox.val() === "Purchases")
+        {
+            $.ajax({
+                url: 'purchases.html',
+                success: (data) =>
+                {
+                    window.location.href = 'purchases.html';
                 },
                 error: (data) =>
                 {
